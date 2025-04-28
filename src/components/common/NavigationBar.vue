@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="bg-green-600">
         Navbar
     </nav>
 </template>
@@ -14,9 +14,4 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-nav {
-    background-color: red;
-    width: 100%;
-}
-</style>
+<style lang=" css" scoped></style>
