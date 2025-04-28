@@ -6,5 +6,6 @@ import HeaderSection from '../components/home/HeaderSection.vue'
 <template>
   <main>
     <HeaderSection />
+    
   </main>
 </template>
