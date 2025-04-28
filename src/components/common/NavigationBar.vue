@@ -1,11 +1,11 @@
 <template>
-    <nav class="bg-white rounded-b-3xl flex items-center justify-center">
+    <nav class="bg-white rounded-b-3xl flex items-center justify-center fixed top-0 z-40 w-full">
         <div class="container flex items-center justify-between">
             <div>
                 <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
             <div>
-                <ul class="flex gap-4 items-center justify-center font-bold">
+                <ul class="flex gap-4 items-center justify-center font-bold text-lg">
                     <li>
                         <RouterLink to="/" class="text-gray-700"> Beranda</RouterLink>
                     </li>
