@@ -1,7 +1,10 @@
 <template>
-    <div class="bg-white text-black font-bold w-full flex items-center justify-center py-20">
-        <div class="container flex items-center justify-center flex-col">
-            <div class="text-7xl text-center font-bold">
+
+    <div class="bg-white relative text-black w-full flex items-center justify-center py-20">
+        <img src="@/assets/images/background/bg_0.png" class="w-full h-full object-cover absolute inset-0 z-0" />
+
+        <div class="container flex items-center justify-center flex-col z-20">
+            <div class="text-7xl text-center font-title">
                 <p>Umroh dan Haji <br>bersama<span class="text-[#34AF5B]"> Umroh Amanah</span></p>
             </div>
             <div>
@@ -24,4 +27,8 @@
 import { RouterLink } from "vue-router" 
 </script>
 
-<style scoped></style>
+<style scoped>
+.font-title {
+    font-weight: 900;
+}
+</style>

@@ -20,7 +20,7 @@
                     <p>Anggota Resmi AMPHURI</p>
                 </div>
                 <div class="col-span-1">
-                    <p class="text-white text-xl font-title ">Kontak Kami</p>
+                    <p class="text-white text-xl font-title">Kontak Kami</p>
                     <div class="flex flex-col gap-4">
                         <div class="flex gap-2 items-center justify-start">
                             <Phone />
@@ -35,7 +35,7 @@
                             <p>Jl. Bone Utama No.13C, Banyuanyar, Kec. Banjarsari, Kota Surakarta</p>
                         </div>
                     </div>
-                    <p class="text-white pt-4 text-xl font-title ">Jam Operasional</p>
+                    <p class="text-white pt-4 text-xl font-title">Jam Operasional</p>
                     <div class="flex flex-col gap-2">
                         <div class="flex gap-2 items-center justify-start">
                             <p>Senin - Jumat</p>
