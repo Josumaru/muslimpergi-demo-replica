@@ -1,7 +1,26 @@
+<script setup lang="ts">
+defineProps({
+  bgColor: {
+    type: String,
+    default: '#FFFFFF', // default putih
+  },
+  textColor: {
+    type: String,
+    default: '#34AF5B', // default hijau
+  },
+});
+</script>
+
 <template>
-    <div class= "inline block-px4  bg-white text-white rounded-full text-sm font-semibold shadow-sm">
-        <p class="text-xs text-[#34AF5B] font-bold text-left p-1">
-            <slot name="title" />
+  <div
+    class="inline-block px-4 py-1 rounded-full shadow-md"
+    :style="{ backgroundColor: bgColor }"
+  >
+    <p
+      class="text-sm font-bold text-left p-1"
+      :style="{ color: textColor }"
+    >
+      <slot name="title" />
     </p>
-    </div>
+  </div>
 </template>

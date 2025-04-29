@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white rounded-xl h-60 flex flex-col text-center p-6 shadow-md">
+    <div class="bg-white rounded-xl h-80 flex flex-col text-center p-6 shadow-md ">
       <!-- Logo -->
-      <div class="mb-4">
+      <div class="mb-4 pb-8">
         <slot name="icon" />
       </div>
   
@@ -11,7 +11,7 @@
       </h3>
   
       <!-- Description -->
-      <p class=" text-black font-bold text-sm text-left">
+      <p class=" text-black font-bold text-sm text-left pt-5">
         <slot name="description" />
       </p>
     </div>

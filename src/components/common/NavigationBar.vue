@@ -34,7 +34,7 @@
                     class="border-2 border-[#34AF5B] text-[#34AF5B] font-bold px-4 py-2 rounded-4xl">
                     Unduh Aplikasi
                 </RouterLink>
-                <RouterLink to="/login" class="bg-[#34AF5B] font-bold text-white px-6 py-2 rounded-4xl">Login
+                <RouterLink to="/login" class="bg-[#34AF5B] font-bold text-white px-6 py-4 rounded-4xl">Login
                 </RouterLink>
             </div>
         </div>
