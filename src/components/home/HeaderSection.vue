@@ -12,7 +12,7 @@
         <p class="text-lg md:text-xl mt-4 py-10" id="description">Wujudkan Ibadah Umroh/Haji Anda Bersama Kami</p>
   
         <!-- Wrapper untuk tab + form agar menyatu -->
-        <div class="w-full max-w-6xl bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
+        <div class="w-full max-w-[1500px] bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
           <!-- Tab Bar -->
           <div class="flex w-full rounded-b-2xl rounded-t-2xl top-4 overflow-hidden">
             <div class="w-1/2 bg-[#229440] text-black py-3 text-center font-semibold">
@@ -32,7 +32,7 @@
               <!-- Field 1 -->
               <div class="text-left rounded-md py-2">
                 <label class="block text-black text-sm font-semibold mb-1 pb-2">Keberangkatan</label>
-                <select class="w-65 py-2 px-2 rounded-full text-black bg-white">
+                <select class="w-80 py-2 px-2 rounded-full text-black bg-white">
                   <option>Jakarta</option>
                 </select>
               </div>
@@ -40,7 +40,7 @@
               <!-- Field 2 -->
               <div class="text-left rounded-md py-2">
                 <label class="block text-black text-sm font-semibold mb-1 pb-2">Jenis Paket</label>
-                <select class="w-65 py-2 px-2 rounded-full text-black bg-white">
+                <select class="w-80 py-2 px-2 rounded-full text-black bg-white">
                   <option>Umroh Reguler</option>
                 </select>
               </div>
@@ -48,7 +48,7 @@
               <!-- Field 3 -->
               <div class="text-left rounded-md py-2">
                 <label class="block text-black text-sm font-semibold mb-1 pb-2">Maskapai</label>
-                <select class="w-65 py-2 px-2 rounded-full text-black bg-white">
+                <select class="w-80 py-2 px-2 rounded-full text-black bg-white">
                   <option>Garuda Indonesia</option>
                 </select>
               </div>
@@ -56,7 +56,7 @@
               <!-- Field 4 -->
               <div class="text-left rounded-md py-2">
                 <label class="block text-black text-sm font-semibold mb-1 pb-2">Bandara Keberangkatan</label>
-                <select class="w-65 py-2 px-2 rounded-full text-black bg-white">
+                <select class="w-80 py-2 px-2 rounded-full text-black bg-white">
                   <option>Soekarno Hatta</option>
                 </select>
               </div>
