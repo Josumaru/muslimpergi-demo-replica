@@ -4,7 +4,7 @@
         <div class="w-full h-full overflow-hidden container">
             <div class="relative z-10 flex flex-col items-center h-full text-center p-8">
                 <div class="flex items-center justify-center gap-4 flex-col">
-                    <OvalTag>
+                    <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
                             Galeri
                         </template>
@@ -22,14 +22,14 @@
 
 <script lang="ts" setup>
 import OvalTag from "@/components/common/OvalTag.vue"
-const images = [
-    "/src/assets/images/gallery/gallery_0.jpg",
-    "/src/assets/images/gallery/gallery_1.jpg",
-    "/src/assets/images/gallery/gallery_2.jpg",
-    "/src/assets/images/gallery/gallery_3.jpg",
-    "/src/assets/images/gallery/gallery_9.jpg",
-    "/src/assets/images/gallery/gallery_10.jpg",
-]
+import img0 from '@/assets/images/gallery/gallery_0.jpg'
+import img1 from '@/assets/images/gallery/gallery_1.jpg'
+import img2 from '@/assets/images/gallery/gallery_2.jpg'
+import img3 from '@/assets/images/gallery/gallery_3.jpg'
+import img9 from '@/assets/images/gallery/gallery_9.jpg'
+import img10 from '@/assets/images/gallery/gallery_10.jpg'
+
+const images = [img0, img1, img2, img3, img9, img10]
 </script>
 
 <style scoped>

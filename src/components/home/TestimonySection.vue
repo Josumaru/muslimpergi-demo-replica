@@ -1,13 +1,13 @@
 <template>
     <div class="bg-white/60 pt-20 relative">
         <img src="@/assets/images/background/bg_circle.svg" class="w-full h-full object-cover absolute inset-0 z-0" />
-        <div class="flex items-center justify-center gap-4 flex-col">
-            <OvalTag>
+        <div class="flex z-20 items-center justify-center gap-4 flex-col">
+            <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                 <template #title>
                     Galeri
                 </template>
             </OvalTag>
-            <p class="text-[#4AA055] text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>
+            <p class="text-[#4AA055] z-20 text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>
             <p class="text-black mt-2">Momen-momen berkesan jamaah UmrohKu selama perjalanan Ibadah</p>
         </div>
         <div class="overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
@@ -25,6 +25,8 @@
 <script setup lang="ts">
 import TestimonialCard from './TestimonialCard.vue'
 import { ref, computed } from 'vue'
+import OvalTag from "@/components/common/OvalTag.vue"
+
 import { RouterLink } from "vue-router"
 // Hover state
 const pause = ref(false)
