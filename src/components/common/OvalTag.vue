@@ -17,7 +17,7 @@ defineProps({
     :style="{ backgroundColor: bgColor }"
   >
     <p
-      class="text-sm font-bold text-left p-1"
+      class="text-sm text-left p-1"
       :style="{ color: textColor }"
     >
       <slot name="title" />

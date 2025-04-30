@@ -1,19 +1,23 @@
 <template>
-    <div class="bg-white rounded-xl h-80 flex flex-col text-center p-6 shadow-md ">
-      <!-- Logo -->
-      <div class="mb-4 pb-8">
-        <slot name="icon" />
+    <div class="bg-white rounded-xl h-70 w-70  flex flex-col text-center shadow-md ">
+
+      <div class="bg-[#5BC740] h-30 rounded-t-xl shadow-4xl flex items-center justify-center">    <!-- Logo -->
+        <div class="mx auto">
+          <slot name="icon" />
+          </div>
+        </div>
+
+        <div class="pl-4 pt-2">
+          <!-- Title -->
+          <h3 class="text-xl text-black mb-10 text-left pt-2 pb-2" id="title">
+            <slot name="title" />
+          </h3>
+    
+          <!-- Description -->
+          <p class=" text-black text-sm text-left pr-3" id="description">
+            <slot name="description" />
+          </p>
       </div>
-  
-      <!-- Title -->
-      <h3 class="text-xl text-black font-bold mb-10 text-left pb-3">
-        <slot name="title" />
-      </h3>
-  
-      <!-- Description -->
-      <p class=" text-black font-bold text-sm text-left pt-5">
-        <slot name="description" />
-      </p>
     </div>
   </template>
 
@@ -22,5 +26,8 @@
 </script>
 
 <style scoped>
-
+#title {
+  font-weight: bolder;
+}
 </style>
+
