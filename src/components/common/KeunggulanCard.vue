@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white rounded-xl h-70 w-70  flex flex-col text-center shadow-md ">
 
-      <div class="bg-[#5BC740] h-30 rounded-t-xl shadow-4xl flex items-center justify-center">    <!-- Logo -->
+      <div class="bg-[#5BC740] h-30 rounded-t-xl shadow-4xl flex items-center justify-center shadow-xl/20">    <!-- Logo -->
         <div class="mx auto">
           <slot name="icon" />
           </div>
