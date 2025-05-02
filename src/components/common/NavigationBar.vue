@@ -10,7 +10,7 @@
                     <p>|</p>
                     <RouterLink to="/" class="font-navbar">Layanan Pelanggan</RouterLink>
                 </div>
-                <p class="text-white text-xs text-center xl:text-base font-bold font-navbar">
+                <p class="text-white text-xs text-center 2xl:text-base font-bold font-navbar">
                     Pengalaman Umrah yang Aman dan Terpercaya. Amankan Kursi Anda Sekarang!
                 </p>
                 <div class="hidden xl:flex items-center justify-center gap-2">
@@ -20,7 +20,6 @@
                     <TwitterIcon class="cursor-pointer" />
                     <InstagramIcon class="cursor-pointer" />
                 </div>
-
             </div>
         </div>
         <div class="container flex items-center justify-between px-4 py-3">
@@ -33,11 +32,12 @@
                     <li>
                         <RouterLink to="/" class="text-gray-700"> Beranda</RouterLink>
                     </li>
-                    <li class="relative" @mouseleave="activeDropdown = null">
+                    <li class="relative group" @mouseover="toggleDropdown('tentang')"
+                        @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('tentang')"
                             class="text-gray-700 flex items-center justify-center focus:outline-none">
                             Tentang Kami
-                            <ChevronRight />
+                            <ChevronRight class="group-hover:rotate-90 transition-all" />
                         </button>
                         <ul v-show="activeDropdown === 'tentang'"
                             class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">
@@ -51,11 +51,12 @@
                         </ul>
                     </li>
 
-                    <li class="relative" @mouseleave="activeDropdown = null">
+                    <li class="relative group" @mouseover="toggleDropdown('paket')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('paket')"
                             class="text-gray-700 flex items-center justify-center focus:outline-none">
                             Paket
-                            <ChevronRight />
+                            <ChevronRight class="group-hover:rotate-90 transition-all" />
+
                         </button>
                         <ul v-show="activeDropdown === 'paket'"
                             class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">
@@ -68,11 +69,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="relative" @mouseleave="activeDropdown = null">
+                    <li class="relative group" @mouseover="toggleDropdown('promo')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('promo')"
                             class="text-gray-700 flex items-center justify-center focus:outline-none">
                             Promo
-                            <ChevronRight />
+                            <ChevronRight class="group-hover:rotate-90 transition-all" />
                         </button>
                         <ul v-show="activeDropdown === 'promo'"
                             class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">

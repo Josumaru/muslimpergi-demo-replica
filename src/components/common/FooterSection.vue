@@ -7,7 +7,7 @@
                         <div class=" bg-white p-1 rounded-lg">
                             <img src="@/assets/logo.svg" alt="Logo" class="w-8 h-8">
                         </div>
-                        <p class="font-title  text-xl">UmrohKu</p>
+                        <p class="font-title text-xl">Umroh Amanah</p>
                     </div>
                     <p class="">Biro perjalanan umroh dan haji terpercaya dengan izin resmi Kementerian Agama
                         RI No.
@@ -19,7 +19,7 @@
                         <Twitter />
                     </div>
                     <div>
-                        <img src="@/assets/images/amphuri.png" alt="Logo" class="bg-white">
+                        <img src="@/assets/images/amphuri.png" alt="Logo" class="bg-white w-[183px]">
                         <p class="">Anggota Resmi AMPHURI</p>
                     </div>
                 </div>
@@ -72,21 +72,21 @@
                 <div class="col-span-1 gap-4 flex flex-col">
                     <p class="text-xl font-title ">Unduh Aplikasi</p>
                     <p class="">Dapatakan akses informasi dan layanan melalui UmrohKu</p>
-                    <div
-                        class="flex bg-white/10 border-[1px] items-center hover:bg-white/20 cursor-pointer border-white/20 p-3 gap-2 rounded-lg">
+                    <a target="_blank" href="https://www.apple.com/id/app-store/"
+                        class="flex bg-white/10 border-2 items-center hover:bg-white/20 cursor-pointer border-white p-3 gap-2 rounded-full">
+                        <img src="@/assets/icons/apple.svg" alt="Google Play" class="w-6">
+                        <p class="">App Store</p>
+                    </a>
+                    <a target="_blank" href="https://play.google.com/"
+                        class="flex bg-white/10 border-2 items-center hover:bg-white/20 cursor-pointer border-white p-3 gap-2 rounded-full">
                         <img src="@/assets/icons/google-play-store.svg" alt="Google Play" class="w-6">
                         <p class="">Play Store</p>
-                    </div>
-                    <div
-                        class="flex bg-white/10 border-[1px] items-center hover:bg-white/20 cursor-pointer border-white/20 p-3 gap-2 rounded-lg">
-                        <img src="@/assets/icons/apple.svg" alt="Google Play" class="w-6">
-                        <p class="">Play Store</p>
-                    </div>
+                    </a>
                     <p class="text-xl font-title ">Newsletter</p>
                     <p class="">Dapatakan info terbaru dan promo special</p>
                     <div class="flex gap-2">
-                        <input type="text" placeholder="Masukkan email"
-                            class="bg-white/10 border-[1px] border-white/20 p-3 rounded-full w-full">
+                        <input type="text" placeholder="Email Anda"
+                            class="bg-white/10 border-2 border-white placeholder:text-white focus-within:outline-0 focus:border-[#4DD32C] p-3 rounded-full w-full">
                         <button
                             class="bg-[#4DD32C] px-5 flex-1  p-3 rounded-full w-full mt-2 hover:bg-white transition-colors hover:text-[#34AF5B]">Daftar</button>
                     </div>
@@ -94,7 +94,7 @@
             </div>
             <div class="border-t-[1px] bg-[#092B01] w-full flex items-center justify-center">
                 <div class="container p-10 text-[#d1d5cf] flex flex-col items-center justify-center">
-                    <p>© 2025 UmrohKu. Hak Cipta Dilindungi.</p>
+                    <p>© 2025 Umroh Amanah. Hak Cipta Dilindungi.</p>
                     <div class="flex gap-2">
                         <p>
                             Syarat & Ketentuan
