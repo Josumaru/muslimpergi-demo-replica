@@ -143,7 +143,7 @@ import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, T
 import { RouterLink } from 'vue-router';
 const activeDropdown = ref<string | null>(null)
 const showSidebar = ref<boolean>(false)
-const showPromo = ref<boolean>(false)
+const showPromo = ref<boolean>(true)
 
 function toggleDropdown(name: string) {
     activeDropdown.value = activeDropdown.value === name ? null : name

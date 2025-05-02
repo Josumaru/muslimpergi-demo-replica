@@ -34,7 +34,7 @@ import TestimonialCard from './TestimonialCard.vue'
 import { ref, computed } from 'vue'
 import OvalTag from "@/components/common/OvalTag.vue"
 import MoreButton from "@/components/common/MoreButton.vue"
-// Hover state
+
 const pause = ref(false)
 
 // Data testimonial
