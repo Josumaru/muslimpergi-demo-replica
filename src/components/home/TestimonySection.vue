@@ -41,21 +41,63 @@ const pause = ref(false)
 const testimonials = [
     {
         rating: 5,
-        text: "Makanan yang disediakan juga enak dan halal. Hotel sangat nyaman dan dekat dengan Masjidil Haram. Terima kasih UmrohKu telah membantu saya menunaikan ibadah dengan khusyuk. Sangat direkomendasikan!",
-        name: "Hadi Santoso",
-        location: "Bandung, Umroh Ramadhan"
+        text: "Pelayanan sangat ramah, dari keberangkatan hingga kembali ke tanah air. Lokasi hotel sangat strategis dan dekat dengan Masjidil Haram.",
+        name: "Nur Aisyah",
+        location: "Depok, Umroh Plus Thaif"
     },
     {
         rating: 4,
-        text: "Makanan yang disediakan juga enak dan halal. Hotel sangat nyaman dan dekat dengan Masjidil Haram. Terima kasih UmrohKu telah membantu saya menunaikan ibadah dengan khusyuk. Sangat direkomendasikan!",
-        name: "Siti Nurhaliza",
-        location: "Jakarta, Umroh Akhir Tahun"
+        text: "Saya sangat puas dengan perjalanan umroh kali ini. Tour guide sangat informatif dan membantu jamaah yang baru pertama kali berangkat.",
+        name: "Bambang Triyono",
+        location: "Semarang, Umroh Reguler"
     },
     {
         rating: 5,
-        text: "Makanan yang disediakan juga enak dan halal. Hotel sangat nyaman dan dekat dengan Masjidil Haram. Terima kasih UmrohKu telah membantu saya menunaikan ibadah dengan khusyuk. Sangat direkomendasikan!",
-        name: "Ahmad Fauzi",
-        location: "Surabaya, Umroh Syawal"
+        text: "Pengalaman yang luar biasa! Semua fasilitas sesuai dengan yang dijanjikan. Terima kasih UmrohKu, insyaAllah akan berangkat lagi bersama keluarga.",
+        name: "Lilis Marlina",
+        location: "Bekasi, Umroh Keluarga"
+    },
+    {
+        rating: 5,
+        text: "Layanan sangat memuaskan. Hotel bersih dan makanan selalu tersedia dengan rasa yang lezat. Saya sangat merekomendasikan UmrohKu!",
+        name: "Rizky Hidayat",
+        location: "Yogyakarta, Umroh Akhir Tahun"
+    },
+    {
+        rating: 4,
+        text: "Umroh bersama UmrohKu sangat terorganisir dengan baik. Tim selalu sigap membantu jamaah, terutama lansia.",
+        name: "Yusuf Maulana",
+        location: "Medan, Umroh Lansia"
+    },
+    {
+        rating: 5,
+        text: "Paket haji yang ditawarkan sangat lengkap dan memudahkan proses ibadah. Petugasnya ramah dan berpengalaman.",
+        name: "Fatimah Zahra",
+        location: "Padang, Haji Plus"
+    },
+    {
+        rating: 5,
+        text: "Sungguh perjalanan spiritual yang luar biasa. Semua berjalan lancar berkat koordinasi tim yang sangat profesional.",
+        name: "Dian Prasetyo",
+        location: "Bogor, Umroh Syawal"
+    },
+    {
+        rating: 4,
+        text: "Hotel nyaman, transportasi lancar, dan jadwal ibadah sangat teratur. Terima kasih UmrohKu atas bimbingannya.",
+        name: "Rina Anggraeni",
+        location: "Tangerang, Umroh Ramadhan"
+    },
+    {
+        rating: 5,
+        text: "Bimbingan selama manasik sangat membantu, sehingga saat di tanah suci ibadah lebih tenang dan khusyuk.",
+        name: "Fajar Nugroho",
+        location: "Solo, Haji Reguler"
+    },
+    {
+        rating: 5,
+        text: "Saya dan istri merasa sangat terbantu dan nyaman. Semoga bisa kembali lagi bersama UmrohKu.",
+        name: "Hendra Wijaya",
+        location: "Malang, Umroh Couple"
     }
 ]
 

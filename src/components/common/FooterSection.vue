@@ -5,7 +5,7 @@
                 <div class="col-span-1 gap-4 flex flex-col">
                     <div class="flex items-center gap-1 justify-start">
                         <div class=" bg-white p-1 rounded-lg">
-                            <img src="@/assets/logo.svg" alt="Logo" class="w-8 h-8">
+                            <img src="@/assets/logo-no-text.svg" alt="Logo" class="w-8 h-8">
                         </div>
                         <p class="font-title text-xl">Umroh Amanah</p>
                     </div>
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="border-t-[1px] bg-[#092B01] w-full flex items-center justify-center">
-                <div class="container p-10 text-[#d1d5cf] flex flex-col items-center justify-center">
+                <div class="container text-center p-10 text-[#d1d5cf] flex flex-col items-center justify-center">
                     <p>© 2025 Umroh Amanah. Hak Cipta Dilindungi.</p>
                     <div class="flex gap-2">
                         <p>

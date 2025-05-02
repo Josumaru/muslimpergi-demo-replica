@@ -1,7 +1,8 @@
 <template>
     <nav
-        class="bg-white flex-col shadow drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
-        <div class="bg-[#34AF5B] w-full py-3 flex items-center justify-center">
+        class="backdrop-blur-lg bg-white/60 flex-col shadow-2xl drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
+        <div :class="showPromo ? 'max-h-[100px] opacity-100' : 'max-h-0 -translate-y-10'"
+            class="transition-all duration-500 bg-[#34AF5B] w-full py-3 flex items-center justify-center">
             <div class="container px-4 text-white flex items-center justify-center xl:justify-between">
                 <div class="xl:flex hidden text-xs 2xl:text-base items-center justify-center gap-2">
                     <RouterLink to="/" class="font-navbar">Paket Umrah</RouterLink>
@@ -26,11 +27,11 @@
             <div class="hidden lg:block">
                 <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
-            <Menu class="lg:hidden text-[#34AF5B]" />
+            <Menu @click="toggleSidebar(true)" class="lg:hidden text-[#34AF5B]" />
             <div>
                 <ul class="hidden lg:flex gap-4 items-center justify-center font-bold text-lg">
                     <li>
-                        <RouterLink to="/" class="text-gray-700"> Beranda</RouterLink>
+                        <RouterLink to="/" class="text-gray-700">Beranda</RouterLink>
                     </li>
                     <li class="relative group" @mouseover="toggleDropdown('tentang')"
                         @mouseleave="activeDropdown = null">
@@ -78,7 +79,7 @@
                         <ul v-show="activeDropdown === 'promo'"
                             class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">
                             <li>
-                                <RouterLink to="/asd1" class="block px-4 py-2 hover:bg-gray-100">Company Profile
+                                <RouterLink to="/asd1" class="block  px-4 py-2 hover:bg-gray-100">Company Profile
                                 </RouterLink>
                             </li>
                             <li>
@@ -92,9 +93,6 @@
                     </li>
                     <li>
                         <RouterLink to="/" class="text-gray-700"> Artikel</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink to="/" class="text-gray-700">Home</RouterLink>
                     </li>
                 </ul>
             </div>
@@ -110,17 +108,60 @@
             </div>
         </div>
     </nav>
+    <nav class=" h-full z-[99] fixed top-0 left-0 w-full transition-transform duration-500"
+        :class="showSidebar ? 'translate-x-0' : '-translate-x-full'">
+        <ul class="flex flex-col gap-2 p-5 z-[100] bg-white h-full">
+            <PanelLeftCloseIcon @click="toggleSidebar(false)" class="fixed right-5 top-5 text-[#34AF5B]" />
+            <div class="hidden lg:block">
+                <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
+            </div>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Beranda</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Tentang Kami</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Paket</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Promo</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Galeri</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Artikel</RouterLink>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon } from 'lucide-vue-next';
+import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon, PanelLeftCloseIcon } from 'lucide-vue-next';
 import { RouterLink } from 'vue-router';
 const activeDropdown = ref<string | null>(null)
+const showSidebar = ref<boolean>(false)
+const showPromo = ref<boolean>(false)
 
 function toggleDropdown(name: string) {
     activeDropdown.value = activeDropdown.value === name ? null : name
 }
+function toggleSidebar(open: boolean) {
+    showSidebar.value = open
+}
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        showPromo.value = false;
+    } else {
+        showPromo.value = true;
+    }
+    lastScrollY = window.scrollY;
+});
 
 </script>
 

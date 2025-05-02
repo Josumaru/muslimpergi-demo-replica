@@ -6,8 +6,8 @@
                     Article
                 </template>
             </OvalTag>
-            <p class="text-[#4AA055] z-20 text-5xl font-title mt-4">Artikel & Informasi</p>
-            <p class="text-black mt-2">Dapatkan informasi terbaru seputar ibadah umroh dan haji</p>
+            <p class="text-[#4AA055] z-20 text-center text-5xl font-title mt-4">Artikel & Informasi</p>
+            <p class="text-black mt-2 text-center">Dapatkan informasi terbaru seputar ibadah umroh dan haji</p>
         </div>
         <div class="w-full flex items-center pt-10 justify-center ">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4 container">
