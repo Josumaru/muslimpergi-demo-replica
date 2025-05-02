@@ -2,7 +2,7 @@
     <div class=" bg-white relative flex items-center justify-center">
         <img src="@/assets/images/background/bg_0.png" class="w-full h-full object-cover absolute inset-0 z-0" />
         <div class="w-full h-full z-50 overflow-hidden container">
-            <div class="relative  flex flex-col items-center h-full text-center p-8">
+            <div class="relative  flex flex-col items-center h-full text-center p-4">
                 <div class="flex items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
@@ -12,7 +12,7 @@
                     <p class="text-[#4AA055] text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>
                     <p class="text-black mt-2">Momen-momen berkesan jamaah UmrohKu selama perjalanan Ibadah</p>
                 </div>
-                <div class="grid grid-cols-3 gap-4 pt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-6">
                     <img v-for="item in images" :key="item" :src="item"
                         class="aspect-square rounded-4xl object-cover" />
                 </div>

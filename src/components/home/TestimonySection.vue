@@ -7,11 +7,12 @@
                 <div class="flex z-20 items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
-                            Galeri
+                            Testimony
                         </template>
                     </OvalTag>
-                    <p class="text-[#4AA055] z-20 text-5xl font-title mt-4">Apa Kata Jamaah Kami</p>
-                    <p class="text-black mt-2">Pengalaman jamaah yang telah melaksanakan ibadah umroh bersama kami</p>
+                    <p class="text-[#4AA055] text-center z-20 text-5xl font-title mt-4">Apa Kata Jamaah Kami</p>
+                    <p class="text-black mt-2 text-center">Pengalaman jamaah yang telah melaksanakan ibadah umroh
+                        bersama kami</p>
                 </div>
                 <div class="z-20 overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
                     <div class="flex flex-none gap-6 animate-marquee" :class="{ 'pause-animation': pause }">

@@ -2,9 +2,9 @@
     <div class="w-full flex items-center justify-center relative">
         <img src="@/assets/images/background/bg_circle_green.svg"
             class="w-full h-full object-cover absolute inset-0 z-0" />
-        <div class="container flex items-start pt-20 justify-between z-20">
+        <div class="container px-4 pb-4 lg:pb-0 flex items-start pt-20 justify-between z-20">
             <div>
-                <p class="text-white w-5/6 font-bold text-3xl/14">Bismillah langkah pertamamu! Klik <span
+                <p class="text-white w-5/6 font-bold text-2xl md:text-3xl/14">Bismillah langkah pertamamu! Klik <span
                         class="text-[#4AA055]">Get
                         Started</span> dan siapkan diri
                     untuk
@@ -12,12 +12,12 @@
                     berkah bersama
                     <span class="text-[#4AA055]">Umrohku.</span>
                 </p>
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <button
                         class="p-4 cursor-pointer px-9 font-button bg-[#4AA055] rounded-full font-bold text-white text-xl">Get
                         Started</button>
                     <button
-                        class="p-4 px-9 font-button cursor-pointer bg-white text-[#4AA055] rounded-full font-bold text-xl flex gap-2">Get
+                        class="p-4 px-9 font-button items-center justify-center cursor-pointer bg-white text-[#4AA055] rounded-full font-bold text-xl flex gap-2">Get
                         the App
                         <img src="@/assets/icons/google-play-store.svg" alt="Google Play" class="w-8 h-8">
                         <img src="@/assets/icons/apple-black.svg" alt="App Store" class="w-8 h-8">
@@ -27,7 +27,7 @@
 
             </div>
 
-            <img src="@/assets/images/ba.png" alt="Promo Image">
+            <img class="hidden xl:block" src="@/assets/images/ba.png" alt="Promo Image">
         </div>
     </div>
 </template>

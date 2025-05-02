@@ -20,14 +20,12 @@ const images = {
 
 <template>
   <main>
-    <div
-      class="relative py-10 px-4 md:px-10 bg-cover bg-center"
-      :style="{ backgroundImage: `url(${images.background})` }"
-    >
+    <div class="relative flex items-center justify-center flex-col py-10 px-4 md:px-10 bg-cover bg-center"
+      :style="{ backgroundImage: `url(${images.background})` }">
       <div class="absolute inset-0 z-0 opacity-60 bg-gradient-to-b from-white to-transparent"></div>
 
       <!-- Main Content -->
-      <div class="relative z-20 flex flex-col items-center justify-center text-center mt-10 gap-3">
+      <div class="relative container px-4 z-20 flex flex-col items-center justify-center text-center mt-10 gap-3">
         <OvalTag bg-color="#FFFFFF" text-color="#34AF5B">
           <template #title>
             <span class="font-extrabold">Keunggulan</span>
@@ -43,7 +41,8 @@ const images = {
       </div>
 
       <!-- Cards Section -->
-      <div class="relative z-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 pt-10 mt-10">
+      <div
+        class="relative container z-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-5 pt-10 mt-10">
         <KeunggulanCard>
           <template #icon>
             <img :src="images.trusted" alt="Terpercaya" class="w-14 h-14 mx-auto" />
@@ -70,7 +69,8 @@ const images = {
           </template>
           <template #title>Lokasi Hotel Strategis</template>
           <template #description>
-            Hotel pilihan kami berlokasi dekat Masjidil Haram dan Masjid Nabawi, memudahkan Anda dalam beribadah tanpa hambatan.
+            Hotel pilihan kami berlokasi dekat Masjidil Haram dan Masjid Nabawi, memudahkan Anda dalam beribadah tanpa
+            hambatan.
           </template>
         </KeunggulanCard>
 
@@ -80,7 +80,8 @@ const images = {
           </template>
           <template #title>Pembayaran Fleksibel</template>
           <template #description>
-            Kami menyediakan berbagai metode pembayaran, termasuk cicilan ringan hingga 12 bulan, untuk kenyamanan finansial Anda.
+            Kami menyediakan berbagai metode pembayaran, termasuk cicilan ringan hingga 12 bulan, untuk kenyamanan
+            finansial Anda.
           </template>
         </KeunggulanCard>
 
@@ -90,7 +91,8 @@ const images = {
           </template>
           <template #title>Layanan Prima</template>
           <template #description>
-            Mulai dari pendaftaran hingga kepulangan, tim profesional kami siap melayani dan mendampingi Anda dengan sepenuh hati.
+            Mulai dari pendaftaran hingga kepulangan, tim profesional kami siap melayani dan mendampingi Anda dengan
+            sepenuh hati.
           </template>
         </KeunggulanCard>
       </div>
@@ -100,9 +102,7 @@ const images = {
 
 
 <style scoped>
-
 #question {
   font-weight: bolder;
 }
-
 </style>

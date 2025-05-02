@@ -10,7 +10,7 @@
             <p class="text-black mt-2">Dapatkan informasi terbaru seputar ibadah umroh dan haji</p>
         </div>
         <div class="w-full flex items-center pt-10 justify-center ">
-            <div class="grid grid-cols-3 gap-4 container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4 container">
                 <template v-for="(card, index) in articles" :key="`article-${index}`">
                     <ArticleCard :title="card.title" :date="card.date" :content="card.content" />
                 </template>

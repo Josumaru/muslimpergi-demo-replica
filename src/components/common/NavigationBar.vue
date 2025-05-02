@@ -2,33 +2,34 @@
     <nav
         class="bg-white flex-col shadow drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
         <div class="bg-[#34AF5B] w-full py-3 flex items-center justify-center">
-            <div class="container text-white flex items-center justify-between">
-                <div class="flex items-center justify-center gap-2">
+            <div class="container px-4 text-white flex items-center justify-center xl:justify-between">
+                <div class="xl:flex hidden text-xs 2xl:text-base items-center justify-center gap-2">
                     <RouterLink to="/" class="font-navbar">Paket Umrah</RouterLink>
                     <p>|</p>
                     <RouterLink to="/" class="font-navbar">Program Haji</RouterLink>
                     <p>|</p>
                     <RouterLink to="/" class="font-navbar">Layanan Pelanggan</RouterLink>
                 </div>
-                <p class="text-white font-bold font-navbar">
-                    Pengalaman Umrah yang Aman dan Terpercaya. Amankan Kursi Anda Sekarang !
+                <p class="text-white text-xs text-center xl:text-base font-bold font-navbar">
+                    Pengalaman Umrah yang Aman dan Terpercaya. Amankan Kursi Anda Sekarang!
                 </p>
-                <div class="flex items-center justify-center gap-2">
-                    <PhoneIcon class="cursor-pointer hover:text-[#34AF5B]" />
-                    <FacebookIcon class="cursor-pointer hover:text-[#34AF5B]" />
-                    <MailIcon class="cursor-pointer hover:text-[#34AF5B]" />
-                    <TwitterIcon class="cursor-pointer hover:text-[#34AF5B]" />
-                    <InstagramIcon class="cursor-pointer hover:text-[#34AF5B]" />
+                <div class="hidden xl:flex items-center justify-center gap-2">
+                    <PhoneIcon class="cursor-pointer" />
+                    <FacebookIcon class="cursor-pointer" />
+                    <MailIcon class="cursor-pointer" />
+                    <TwitterIcon class="cursor-pointer" />
+                    <InstagramIcon class="cursor-pointer" />
                 </div>
 
             </div>
         </div>
-        <div class="container flex items-center justify-between py-3">
-            <div>
+        <div class="container flex items-center justify-between px-4 py-3">
+            <div class="hidden lg:block">
                 <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
+            <Menu class="lg:hidden text-[#34AF5B]" />
             <div>
-                <ul class="flex gap-4 items-center justify-center font-bold text-lg">
+                <ul class="hidden lg:flex gap-4 items-center justify-center font-bold text-lg">
                     <li>
                         <RouterLink to="/" class="text-gray-700"> Beranda</RouterLink>
                     </li>
@@ -102,7 +103,7 @@
                     Unduh Aplikasi
                 </RouterLink>
                 <RouterLink to="/login"
-                    class="font-button hover:bg-white hover:text-[#34AF5B] transition-colors border-2 hover:border-[#34AF5B] bg-[#34AF5B] font-bold text-white px-6 py-2 rounded-4xl">
+                    class="font-button hover:bg-white border-[#34AF5B] hover:text-[#34AF5B] transition-colors border-2 hover:border-[#34AF5B] bg-[#34AF5B] font-bold text-white px-6 py-2 rounded-4xl">
                     Login
                 </RouterLink>
             </div>
@@ -112,7 +113,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ChevronRight, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon } from 'lucide-vue-next';
+import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon } from 'lucide-vue-next';
 import { RouterLink } from 'vue-router';
 const activeDropdown = ref<string | null>(null)
 

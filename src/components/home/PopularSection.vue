@@ -1,130 +1,112 @@
 <template>
-    <main>
-      <div class="bg-[#FFFFFF] py-10 px-4 overflow-hidden">
-        <!-- Header Section -->
-        <div class="flex flex-col items-center justify-center text-center mt-10 gap-3 pb-5">
-          <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
-            <template #title>
-              Paket Terbaik
-            </template>
-          </OvalTag>
-  
-          <h2 class="text-[#34AF5B] text-2xl md:text-3xl lg:text-4xl font-bold">
-            Paket Umroh dan Haji Paling Populer
-          </h2>
-  
-          <p class="text-[#34AF5B] text-sm w-full md:text-base  p-1">
-            Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah
-          </p>
-        </div>
-  
-        <div class="marquee-container mt-10">
-            <div class="marquee-track">
-                    <!-- Konten asli -->
-                    <template v-for="(card, index) in bestPackages" :key="`original-${index}`">
-                    <PopularCard
-                        :imageUrl="card.imageUrl"
-                        :title="card.title"
-                        :date="card.date"
-                        :seats="card.seats"
-                        :hotelStars="card.hotelStars"
-                        :departure="card.departure"
-                        :airline="card.airline"
-                        :price="card.price"
-                    />
-                    </template>
+  <main>
+    <div class="bg-[#FFFFFF] py-10 sm:px-0 overflow-hidden">
+      <!-- Header Section -->
+      <div class="flex flex-col items-center justify-center text-center mt-10 gap-3 pb-5">
+        <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
+          <template #title>
+            Paket Terbaik
+          </template>
+        </OvalTag>
 
-                    <!-- Duplikat konten agar tidak habis -->
-                    <template v-for="(card, index) in bestPackages" :key="`duplicate-${index}`">
-                    <PopularCard
-                        :imageUrl="card.imageUrl"
-                        :title="card.title"
-                        :date="card.date"
-                        :seats="card.seats"
-                        :hotelStars="card.hotelStars"
-                        :departure="card.departure"
-                        :airline="card.airline"
-                        :price="card.price"
-                    />
-                    </template>
-                </div>
-            </div>
-            <div class="flex justify-center mt-10 p-4">
-            <div class="bg-[#FFFFFF] inline-block px-4 py-1 shadow-md border-2 border-[#1ECD34]">
-                <p class="text-black text-sm font-bold text-left p-1">
-                Lihat Semua Paket
-                </p>
-            </div>
+        <h2 class="text-[#34AF5B] text-2xl md:text-3xl lg:text-4xl font-bold">
+          Paket Umroh dan Haji Paling Populer
+        </h2>
+
+        <p class="text-[#34AF5B] text-sm w-full md:text-base  p-1">
+          Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah
+        </p>
+      </div>
+
+      <div class="marquee-container mt-10">
+        <div class="marquee-track">
+          <!-- Konten asli -->
+          <template v-for="(card, index) in bestPackages" :key="`original-${index}`">
+            <PopularCard :imageUrl="card.imageUrl" :title="card.title" :date="card.date" :seats="card.seats"
+              :hotelStars="card.hotelStars" :departure="card.departure" :airline="card.airline" :price="card.price" />
+          </template>
+
+          <!-- Duplikat konten agar tidak habis -->
+          <template v-for="(card, index) in bestPackages" :key="`duplicate-${index}`">
+            <PopularCard :imageUrl="card.imageUrl" :title="card.title" :date="card.date" :seats="card.seats"
+              :hotelStars="card.hotelStars" :departure="card.departure" :airline="card.airline" :price="card.price" />
+          </template>
         </div>
       </div>
-    </main>
-  </template>
-  
-  <script setup lang="ts">
-  import OvalTag from '../common/OvalTag.vue';
-  import PopularCard from '../common/PopularCard.vue';
-  import pic1 from '@/assets/PopularComponents/pic1.jpg';
-  import pic2 from '@/assets/PopularComponents/pic2.png';
-  import pic3 from '@/assets/PopularComponents/pic3.jpg';
-  import pic4 from '@/assets/PopularComponents/pic4.svg';
+      <div class="flex justify-center mt-10 p-4">
+        <MoreButton to="/">Lihat Semua Paket</MoreButton>
+      </div>
+    </div>
+  </main>
+</template>
 
-  const images = {
-    pic1,
-    pic2,
-    pic3,
-    pic4,
-  }
+<script setup lang="ts">
+import OvalTag from '../common/OvalTag.vue';
+import PopularCard from '../common/PopularCard.vue';
+import pic1 from '@/assets/PopularComponents/pic1.jpg';
+import pic2 from '@/assets/PopularComponents/pic2.png';
+import pic3 from '@/assets/PopularComponents/pic3.jpg';
+import pic4 from '@/assets/PopularComponents/pic4.svg';
+import MoreButton from '../common/MoreButton.vue';
+
+const images = {
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+}
 // Untuk menampilkan dua baris
-  
-  // Daftar paket terbaik (bisa di-fetch dari API nanti juga)
-  const bestPackages = [
-    {
-      title: "Ziarah Aqsha & Tour Jordan Plus Dubai",
-      date: "20 - 25 April 2025",
-      seats: "19/20 Available",
-      hotelStars: 3,
-      departure: "Jakarta",
-      airline: "Emirates",
-      price: "Rp. 15.000.000,00",
-      imageUrl: images.pic1
-    },
-    {
-      title: "Umroh Reguler Hemat",
-      date: "1 - 10 Mei 2025",
-      seats: "15/25 Available",
-      hotelStars: 4,
-      departure: "Jakarta",
-      airline: "Saudi Airlines",
-      price: "Rp. 22.000.000,00",
-      imageUrl: images.pic2
-    },
-    {
-      title: "Umroh Plus Turki",
-      date: "15 - 25 Juni 2025",
-      seats: "10/20 Available",
-      hotelStars: 5,
-      departure: "Surabaya",
-      airline: "Turkish Airlines",
-      price: "Rp. 30.000.000,00",
-      imageUrl: images.pic3
-    },
-    {
-      title: "Umroh Plus Turki",
-      date: "15 - 25 Juni 2025",
-      seats: "10/20 Available",
-      hotelStars: 5,
-      departure: "Surabaya",
-      airline: "Turkish Airlines",
-      price: "Rp. 30.000.000,00",
-      imageUrl: images.pic4  
-    },
-  ];
-  </script>
+
+// Daftar paket terbaik (bisa di-fetch dari API nanti juga)
+const bestPackages = [
+  {
+    title: "Ziarah Aqsha & Tour Jordan Plus Dubai",
+    date: "20 - 25 April 2025",
+    seats: "19/20 Available",
+    hotelStars: 3,
+    departure: "Jakarta",
+    airline: "Emirates",
+    price: "Rp. 15.000.000,00",
+    imageUrl: images.pic1
+  },
+  {
+    title: "Umroh Reguler Hemat",
+    date: "1 - 10 Mei 2025",
+    seats: "15/25 Available",
+    hotelStars: 4,
+    departure: "Jakarta",
+    airline: "Saudi Airlines",
+    price: "Rp. 22.000.000,00",
+    imageUrl: images.pic2
+  },
+  {
+    title: "Umroh Plus Turki",
+    date: "15 - 25 Juni 2025",
+    seats: "10/20 Available",
+    hotelStars: 5,
+    departure: "Surabaya",
+    airline: "Turkish Airlines",
+    price: "Rp. 30.000.000,00",
+    imageUrl: images.pic3
+  },
+  {
+    title: "Umroh Plus Turki",
+    date: "15 - 25 Juni 2025",
+    seats: "10/20 Available",
+    hotelStars: 5,
+    departure: "Surabaya",
+    airline: "Turkish Airlines",
+    price: "Rp. 30.000.000,00",
+    imageUrl: images.pic4
+  },
+];
+</script>
 <style scoped>
 @keyframes scrollLeft {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
