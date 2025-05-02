@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white rounded-xl shadow-md overflow-hidden w-[320px] flex flex-col h-full pb-3">
     <!-- Banner Image -->
-    <img :src="imageUrl ?? '@/assets/PopularComponents/tryPopImage.svg'" alt="Tour Image"
+    <img :src="imageUrl ?? '@/assets/PopularComponents/pic4.svg'" alt="Tour Image"
       class="w-full h-40 object-cover" />
 
     <!-- Content -->
