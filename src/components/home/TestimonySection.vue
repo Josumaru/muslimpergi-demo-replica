@@ -1,8 +1,8 @@
 <template>
     <div class="bg-white/60">
         <div class="relative">
-            <!-- <img src="@/assets/images/background/bg_circle.svg"
-                class="w-full h-full object-cover absolute inset-0 z-0" /> -->
+            <img src="@/assets/images/background/bg_circle.svg"
+                class="w-full h-full object-cover absolute inset-0 z-0" />
             <div class="z-50 pt-10">
                 <div class="flex z-20 items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">

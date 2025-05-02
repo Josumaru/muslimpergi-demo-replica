@@ -31,25 +31,11 @@
             <div>
                 <ul class="hidden lg:flex gap-4 items-center justify-center font-bold text-lg">
                     <li>
-                        <RouterLink to="/" class="text-gray-700">Beranda</RouterLink>
+                        <RouterLink to="/" class="text-gray-700 hover:text-white">Beranda</RouterLink>
                     </li>
-                    <li class="relative group" @mouseover="toggleDropdown('tentang')"
-                        @mouseleave="activeDropdown = null">
-                        <button @click="toggleDropdown('tentang')"
-                            class="text-gray-700 flex items-center justify-center focus:outline-none">
-                            Tentang Kami
-                            <ChevronRight class="group-hover:rotate-90 transition-all" />
-                        </button>
-                        <ul v-show="activeDropdown === 'tentang'"
-                            class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">
-                            <li>
-                                <RouterLink to="/asd1" class="block px-4 py-2 hover:bg-gray-100">Company Profile
-                                </RouterLink>
-                            </li>
-                            <li>
-                                <RouterLink to="/asd2" class="block px-4 py-2 hover:bg-gray-100">Pusat</RouterLink>
-                            </li>
-                        </ul>
+                    <li>
+                        <RouterLink to="/about-us" class="text-gray-700 hover:text-white">Tentang Kami
+                        </RouterLink>
                     </li>
 
                     <li class="relative group" @mouseover="toggleDropdown('paket')" @mouseleave="activeDropdown = null">

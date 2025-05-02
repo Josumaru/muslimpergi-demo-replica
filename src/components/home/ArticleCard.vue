@@ -10,7 +10,7 @@
                     <h2 class="text-2xl font-title mb-1">{{ title }}</h2>
                     <p class="text-xs mb-2 text-gray-800 font-title">Diterbitkan {{ date }}</p>
                     <p class="text-justify text-white leading-relaxed line-clamp-[5]">{{ content }}</p>
-                    <p class="mt-2 font-bold text-sm font-title">Baca Selengkapnya</p>
+                    <p class="mt-2 font-bold text-sm font-title cursor-pointer">Baca Selengkapnya</p>
                 </div>
             </div>
         </div>

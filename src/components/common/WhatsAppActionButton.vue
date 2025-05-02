@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bottom-20 z-[99] right-20 group overflow-visible">
+    <div class="fixed bottom-20 z-[99] right-20 md:right-24 group overflow-visible">
         <div class="hidden lg:block relative overflow-visible cursor-pointer" @click="togglePopup">
             <button class="w-16 h-16 absolute transition-all duration-300 group-hover:translate-x-[-405px] flex items-center justify-center
           cursor-pointer rounded-full z-20">
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div v-if="showPopup" class="fixed bottom-24 right-0 px-4 lg:px-0 bg-opacity-50 z-50">
+    <div v-if="showPopup" class="fixed bottom-24 right-0 lg:right-10 px-4 lg:px-0 bg-opacity-50 z-50">
         <div class="bg-white w-full max-w-md rounded-xl shadow-lg overflow-hidden">
             <div class="mb-4 bg-[#34AF5B] flex items-center justify-center relative">
                 <h2 class="p-3 pr-8 text-white ">
