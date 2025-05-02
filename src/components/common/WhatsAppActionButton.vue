@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bottom-20 z-[99] right-20 md:right-24 group overflow-visible">
+    <div class="fixed bottom-20 z-[99] right-20 md:right-20 group overflow-visible">
         <div class="hidden lg:block relative overflow-visible cursor-pointer" @click="togglePopup">
             <button class="w-16 h-16 absolute transition-all duration-300 group-hover:translate-x-[-405px] flex items-center justify-center
           cursor-pointer rounded-full z-20">
