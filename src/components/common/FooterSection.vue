@@ -22,15 +22,18 @@
                 <div class="col-span-1">
                     <p class="text-white text-xl font-title">Kontak Kami</p>
                     <div class="flex flex-col gap-4">
-                        <div class="flex gap-2 items-center justify-start">
+                        <div
+                            class="hover:text-white transition-colors cursor-pointer flex gap-2 items-center justify-start">
                             <Phone />
                             <p>+6281 1906 601</p>
                         </div>
-                        <div class="flex gap-2 items-center justify-start">
+                        <div
+                            class="flex gap-2 items-center justify-start hover:text-white transition-colors cursor-pointer ">
                             <Mail />
                             <p>info@muslimpergi.com</p>
                         </div>
-                        <div class="flex gap-2 items-center justify-start">
+                        <div
+                            class="flex gap-2 items-center justify-start hover:text-white transition-colors cursor-pointer ">
                             <MapPin class="w-9 h-9" />
                             <p>Jl. Bone Utama No.13C, Banyuanyar, Kec. Banjarsari, Kota Surakarta</p>
                         </div>
@@ -55,14 +58,14 @@
                 <div class="col-span-1">
                     <p class="text-white text-xl font-title">Link Cepat</p>
                     <div class="flex flex-col gap-2">
-                        <RouterLink to="/">Tentang Kami</RouterLink>
-                        <RouterLink to="/">Paket Umroh</RouterLink>
-                        <RouterLink to="/">Paket Haji</RouterLink>
-                        <RouterLink to="/">Jadwal Keberangkatan</RouterLink>
-                        <RouterLink to="/">Galeri</RouterLink>
-                        <RouterLink to="/">Artikel</RouterLink>
-                        <RouterLink to="/">FAQ</RouterLink>
-                        <RouterLink to="/">Kontak</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Tentang Kami</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Paket Umroh</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Paket Haji</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Jadwal Keberangkatan</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Galeri</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Artikel</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">FAQ</RouterLink>
+                        <RouterLink class="hover:text-white transition-colors" to="/">Kontak</RouterLink>
                     </div>
                 </div>
                 <div class="col-span-1 gap-4 flex flex-col">
@@ -84,7 +87,7 @@
                         <input type="text" placeholder="Masukkan email"
                             class="bg-white/10 border-[1px] border-white/20 p-3 rounded-lg w-full">
                         <button
-                            class="bg-[#4AA055] flex-1 text-white p-3 rounded-lg w-full mt-2 hover:bg-[#4338ca]">Daftar</button>
+                            class="bg-[#4AA055] flex-1 text-white p-3 rounded-lg w-full mt-2 hover:bg-white transition-colors hover:text-[#34AF5B]">Daftar</button>
                     </div>
                 </div>
             </div>

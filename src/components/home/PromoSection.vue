@@ -1,6 +1,8 @@
 <template>
-    <div class="w-full flex items-center justify-center">
-        <div class="container flex items-start pt-20 justify-between">
+    <div class="w-full flex items-center justify-center relative">
+        <img src="@/assets/images/background/bg_circle_green.svg"
+            class="w-full h-full object-cover absolute inset-0 z-0" />
+        <div class="container flex items-start pt-20 justify-between z-20">
             <div>
                 <p class="text-white w-5/6 font-bold text-3xl/14">Bismillah langkah pertamamu! Klik <span
                         class="text-[#4AA055]">Get

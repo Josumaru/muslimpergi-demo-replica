@@ -1,8 +1,8 @@
 <template>
     <div class=" bg-white relative flex items-center justify-center">
         <img src="@/assets/images/background/bg_0.png" class="w-full h-full object-cover absolute inset-0 z-0" />
-        <div class="w-full h-full overflow-hidden container">
-            <div class="relative z-10 flex flex-col items-center h-full text-center p-8">
+        <div class="w-full h-full z-50 overflow-hidden container">
+            <div class="relative  flex flex-col items-center h-full text-center p-8">
                 <div class="flex items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
@@ -13,8 +13,14 @@
                     <p class="text-black mt-2">Momen-momen berkesan jamaah UmrohKu selama perjalanan Ibadah</p>
                 </div>
                 <div class="grid grid-cols-3 gap-4 pt-6">
-                    <img v-for="item in images" :key="item" :src="item" class="aspect-square rounded-xl object-cover" />
+                    <img v-for="item in images" :key="item" :src="item"
+                        class="aspect-square rounded-4xl object-cover" />
                 </div>
+            </div>
+            <div class="w-full flex items-center justify-center pb-10">
+                <MoreButton to="/">
+                    Lihat Semua Galeri
+                </MoreButton>
             </div>
         </div>
     </div>
@@ -28,7 +34,7 @@ import img2 from '@/assets/images/gallery/gallery_2.jpg'
 import img3 from '@/assets/images/gallery/gallery_3.jpg'
 import img9 from '@/assets/images/gallery/gallery_9.jpg'
 import img10 from '@/assets/images/gallery/gallery_10.jpg'
-
+import MoreButton from "../common/MoreButton.vue"
 const images = [img0, img1, img2, img3, img9, img10]
 </script>
 

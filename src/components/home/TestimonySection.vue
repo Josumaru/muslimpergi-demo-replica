@@ -1,23 +1,29 @@
 <template>
-    <div class="bg-white/60 pt-20 relative">
-        <img src="@/assets/images/background/bg_circle.svg" class="w-full h-full object-cover absolute inset-0 z-0" />
-        <div class="flex z-20 items-center justify-center gap-4 flex-col">
-            <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
-                <template #title>
-                    Galeri
-                </template>
-            </OvalTag>
-            <p class="text-[#4AA055] z-20 text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>
-            <p class="text-black mt-2">Momen-momen berkesan jamaah UmrohKu selama perjalanan Ibadah</p>
-        </div>
-        <div class="overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
-            <div class="flex flex-none gap-6 animate-marquee" :class="{ 'pause-animation': pause }">
-                <TestimonialCard v-for="(item, i) in repeatedTestimonials" :key="i" v-bind="item" />
+    <div class="bg-white/60">
+        <div class="relative">
+            <!-- <img src="@/assets/images/background/bg_circle.svg"
+                class="w-full h-full object-cover absolute inset-0 z-0" /> -->
+            <div class="z-50 pt-10">
+                <div class="flex z-20 items-center justify-center gap-4 flex-col">
+                    <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
+                        <template #title>
+                            Galeri
+                        </template>
+                    </OvalTag>
+                    <p class="text-[#4AA055] z-20 text-5xl font-title mt-4">Apa Kata Jamaah Kami</p>
+                    <p class="text-black mt-2">Pengalaman jamaah yang telah melaksanakan ibadah umroh bersama kami</p>
+                </div>
+                <div class="z-20 overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
+                    <div class="flex flex-none gap-6 animate-marquee" :class="{ 'pause-animation': pause }">
+                        <TestimonialCard v-for="(item, i) in repeatedTestimonials" :key="i" v-bind="item" />
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="w-full flex items-center justify-center py-10">
-            <RouterLink class="text-black border-[3px] font-bold border-[#4AA055] rounded-lg p-2">Lihat Semua Testimoni
-            </RouterLink>
+            <div class="w-full z-50 flex items-center justify-center py-10">
+                <MoreButton to="/">
+                    Lihat Semua Testimoni
+                </MoreButton>
+            </div>
         </div>
     </div>
 </template>
@@ -26,8 +32,7 @@
 import TestimonialCard from './TestimonialCard.vue'
 import { ref, computed } from 'vue'
 import OvalTag from "@/components/common/OvalTag.vue"
-
-import { RouterLink } from "vue-router"
+import MoreButton from "@/components/common/MoreButton.vue"
 // Hover state
 const pause = ref(false)
 

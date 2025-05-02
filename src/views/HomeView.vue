@@ -6,6 +6,8 @@ import PromoSection from '@/components/home/PromoSection.vue'
 import PopularSection from '@/components/home/PopularSection.vue'
 import GallerySection from "../components/home/GallerySection.vue"
 import TestimonySection from "../components/home/TestimonySection.vue"
+import ArticleSection from "../components/home/ArticleSection.vue"
+import WhatsAppActionButton from '@/components/common/WhatsAppActionButton.vue'
 </script>
 
 <template>
@@ -15,6 +17,7 @@ import TestimonySection from "../components/home/TestimonySection.vue"
     <KeunggulanSection />
     <PopularSection />
     <GallerySection />
+    <ArticleSection />
     <div class="relative flex w-full items-center justify-center">
       <img src="@/assets/images/background/bg_kabaah.png" class="w-full h-full object-cover absolute inset-0 z-0" />
       <div class="z-20 w-full">
@@ -24,5 +27,6 @@ import TestimonySection from "../components/home/TestimonySection.vue"
         </div>
       </div>
     </div>
+    <WhatsAppActionButton />
   </main>
 </template>
