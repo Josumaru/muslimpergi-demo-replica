@@ -15,16 +15,16 @@
       <div class="w-full max-w-[1500px] bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
         <!-- Tab Bar -->
         <div class="flex w-full rounded-b-2xl rounded-t-2xl top-4 overflow-hidden">
-          <div class="w-1/2 bg-[#229440] text-black py-3 text-center font-semibold">
+          <div class="w-1/2 bg-[#229440]  text-black py-3 text-center hover:bg-[#4DD32C] focus:outline-2" id="tabPart">
             Paket Umroh
           </div>
-          <div class="w-1/2 bg-[#4DD32C] text-black py-3 text-center font-semibold">
+          <div class="w-1/2 bg-[#4DD32C] text-black py-3 text-center hover:bg-[#229440] focus:outline-2" id="tabPart">
             Paket Haji
           </div>
         </div>
 
         <!-- Form Search -->
-        <div class="px-4 py-8">
+        <div class="px-4 py-4 pb-8">
           <h3 class="text-black text-xl font-semibold mb-4 text-left" id="searchText">Cari Paket Umrah terbaik Termurah
           </h3>
 
@@ -101,5 +101,10 @@ const image = {
 
 .bg-lime-400 {
   background-color: #A4D65E;
+}
+#tabPart {
+  cursor: pointer;
+  transition: background-color 0.9s ease;
+  font-weight: bold;
 }
 </style>
