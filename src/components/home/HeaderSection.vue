@@ -15,7 +15,7 @@
       <div class="w-full max-w-[1500px] bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
         <!-- Tab Bar -->
         <div class="flex w-full rounded-b-2xl rounded-t-2xl top-4 overflow-hidden">
-          <div class="w-1/2 bg-[#229440]  text-black py-3 text-center hover:bg-[#4DD32C] focus:outline-2" id="tabPart">
+          <div class="w-1/2 bg-[#229440]  text-black py-3 text-center hover:bg-[#4DD32C]" id="tabPart">
             Paket Umroh
           </div>
           <div class="w-1/2 bg-[#4DD32C] text-black py-3 text-center hover:bg-[#229440] focus:outline-2" id="tabPart">
@@ -104,7 +104,7 @@ const image = {
 }
 #tabPart {
   cursor: pointer;
-  transition: background-color 0.9s ease;
+  transition: background-color 0.5s ease;
   font-weight: bold;
 }
 </style>

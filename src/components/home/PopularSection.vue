@@ -8,16 +8,16 @@
               Paket Terbaik
             </template>
           </OvalTag>
-  
+
           <h2 class="text-[#34AF5B] text-2xl md:text-3xl lg:text-4xl font-bold">
             Paket Umroh dan Haji Paling Populer
           </h2>
-  
+
           <p class="text-[#34AF5B] text-sm w-full md:text-base  p-1">
             Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah
           </p>
         </div>
-  
+
         <div class="marquee-container mt-10">
             <div class="marquee-track">
                     <!-- Konten asli -->
@@ -57,7 +57,7 @@
       </div>
     </main>
   </template>
-  
+
   <script setup lang="ts">
   import MoreButton from '@/components/common/MoreButton.vue';
   import OvalTag from '../common/OvalTag.vue';
@@ -74,7 +74,7 @@
     pic4,
   }
 // Untuk menampilkan dua baris
-  
+
   // Daftar paket terbaik (bisa di-fetch dari API nanti juga)
   const bestPackages = [
     {
@@ -115,7 +115,7 @@
       departure: "Surabaya",
       airline: "Turkish Airlines",
       price: "Rp. 30.000.000,00",
-      imageUrl: images.pic4  
+      imageUrl: images.pic4
     },
   ];
   </script>
