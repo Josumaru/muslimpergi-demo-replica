@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-white relative flex items-center justify-center">
+    <div class="relative flex items-center justify-center">
         <img src="@/assets/images/background/bg_0.png" class="w-full h-full object-cover absolute inset-0 z-0" />
         <div class="w-full h-full z-50 overflow-hidden container">
             <div class="relative  flex flex-col items-center h-full text-center p-4">

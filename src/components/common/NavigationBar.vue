@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="backdrop-blur-lg bg-white/60 flex-col shadow-2xl drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
+        class="backdrop-blur-lg bg-white/60 dark:bg-black/60 flex-col shadow-2xl drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
         <div :class="showPromo ? 'max-h-[100px] opacity-100' : 'max-h-0 -translate-y-10'"
             class="transition-all duration-500 bg-[#34AF5B] w-full py-3 flex items-center justify-center">
             <div class="container px-4 text-white flex items-center justify-center xl:justify-between">
@@ -25,20 +25,22 @@
         </div>
         <div class="container flex items-center justify-between px-4 py-3">
             <div class="hidden lg:block">
-                <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
+                <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
             <Menu @click="toggleSidebar(true)" class="lg:hidden text-[#34AF5B]" />
-            <div>
-                <ul class="hidden lg:flex gap-4 items-center justify-center font-bold text-lg">
+            <div class="translate-x-24">
+                <ul class="hidden  text-gray-700 lg:flex gap-4 items-center justify-center font-bold text-lg">
                     <li>
-                        <RouterLink to="/" class="text-gray-700 hover:text-white">Beranda</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink to="/about-us" class="text-gray-700 hover:text-white">Tentang Kami
+                        <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Beranda
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/paket" class="text-gray-700 hover:text-white">Paket
+                        <RouterLink to="/about-us" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Tentang
+                            Kami
+                        </RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="/paket" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Paket
                         </RouterLink>
                     </li>
                     <!-- <li class="relative group" @mouseover="toggleDropdown('paket')" @mouseleave="activeDropdown = null">
@@ -60,7 +62,7 @@
                     </li> -->
                     <li class="relative group" @mouseover="toggleDropdown('promo')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('promo')"
-                            class="text-gray-700 hover:text-white flex items-center justify-center focus:outline-none">
+                            class="text-gray-700 dark:text-white hover:text-[#34AF5B] flex items-center justify-center focus:outline-none">
                             Promo
                             <ChevronRight class="group-hover:rotate-90 transition-all" />
                         </button>
@@ -76,14 +78,26 @@
                         </ul>
                     </li>
                     <li>
-                        <RouterLink to="/" class="text-gray-700 hover:text-white"> Galeri</RouterLink>
+                        <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Galeri
+                        </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/" class="text-gray-700 hover:text-white"> Artikel</RouterLink>
+                        <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Artikel
+                        </RouterLink>
                     </li>
                 </ul>
             </div>
             <div class="flex gap-4">
+                <div class="flex text-2xl dark:text-white items-center justify-center text-black gap-2">
+                    <LucideLanguages class="h-6 w-6" />
+                    <p>ID</p>
+                </div>
+                <div class="flex dark:text-white items-center justify-center text-black">
+                    <Sun @click="toggleDark()"
+                        class="hover:text-[#34AF5B] dark:hidden block cursor-pointer transition-colors" />
+                    <Moon @click="toggleDark()"
+                        class="hover:text-[#34AF5B] hidden dark:block cursor-pointer transition-colors" />
+                </div>
                 <RouterLink to="/login"
                     class="border-2 font-button hover:bg-[#34AF5B] hover:text-white transition-colors border-[#34AF5B] flex items-center text-[#34AF5B] font-bold px-4 py-2 rounded-4xl">
                     Unduh Aplikasi
@@ -100,7 +114,7 @@
         <ul class="flex flex-col gap-2 p-5 z-[100] bg-white h-full">
             <PanelLeftCloseIcon @click="toggleSidebar(false)" class="fixed right-5 top-5 text-[#34AF5B]" />
             <div class="hidden lg:block">
-                <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
+                <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
             <li>
                 <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Beranda
@@ -132,11 +146,15 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon, PanelLeftCloseIcon } from 'lucide-vue-next';
+import { ChevronRight, Menu, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, TwitterIcon, PanelLeftCloseIcon, LucideLanguages, Sun, Moon } from 'lucide-vue-next';
 import { RouterLink } from 'vue-router';
+import { useDark, useToggle } from '@vueuse/core'
 const activeDropdown = ref<string | null>(null)
 const showSidebar = ref<boolean>(false)
 const showPromo = ref<boolean>(true)
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 
 function toggleDropdown(name: string) {
     activeDropdown.value = activeDropdown.value === name ? null : name

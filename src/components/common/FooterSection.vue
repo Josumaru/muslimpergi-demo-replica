@@ -5,7 +5,7 @@
                 <div class="col-span-1 gap-4 flex flex-col">
                     <div class="flex items-center gap-1 justify-start">
                         <div class=" bg-white p-1 rounded-lg">
-                            <img src="@/assets/logo-no-text.svg" alt="Logo" class="w-8 h-8">
+                            <img src="@/assets/logo.png" alt="Logo" class="w-8 h-8">
                         </div>
                         <p class="font-title text-xl">Umroh Amanah</p>
                     </div>
