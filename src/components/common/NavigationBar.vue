@@ -1,7 +1,7 @@
 <template>
     <nav
-        class="backdrop-blur-lg bg-white/60 dark:bg-black/60 flex-col shadow-2xl drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
-        <div :class="showPromo ? 'max-h-[100px] opacity-100' : 'max-h-0 -translate-y-10'"
+        class="backdrop-blur-lg bg-white/60 dark:bg-black/60 flex-col transition-all duration-300 shadow-2xl drop-shadow-black rounded-b-3xl flex items-center justify-center fixed top-0 z-[99] w-full">
+        <div :class="showPromo ? 'max-h-[100px] opacity-100' : 'max-h-0 hidden -translate-y-10'"
             class="transition-all duration-500 bg-[#34AF5B] w-full py-3 flex items-center justify-center">
             <div class="container px-4 text-white flex items-center justify-center xl:justify-between">
                 <div class="xl:flex hidden text-xs 2xl:text-base items-center justify-center gap-2">
@@ -25,7 +25,8 @@
         </div>
         <div class="container flex items-center justify-between px-4 py-3">
             <div class="hidden lg:block">
-                <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
+                <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 dark:hidden mx-auto mb-4" />
+                <img src="@/assets/logo-dark.png" alt="Logo" class="w-16 h-16  hidden dark:block mx-auto mb-4">
             </div>
             <Menu @click="toggleSidebar(true)" class="lg:hidden text-[#34AF5B]" />
             <div class="translate-x-24">
@@ -78,7 +79,7 @@
                         </ul>
                     </li>
                     <li>
-                        <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Galeri
+                        <RouterLink to="/gallery" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Galeri
                         </RouterLink>
                     </li>
                     <li>
@@ -133,7 +134,8 @@
                 </RouterLink>
             </li>
             <li>
-                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Galeri
+                <RouterLink @click="toggleSidebar(false)" to="/gallery" class="hover:text-[#34AF5B] text-gray-700">
+                    Galeri
                 </RouterLink>
             </li>
             <li>
