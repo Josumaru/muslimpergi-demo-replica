@@ -26,7 +26,7 @@ const router = createRouter({
       path: '/promo',
       name: 'promo',
       component: () => import('../views/PromoView.vue'),
-    }
+    },
     {
       path: '/gallery',
       name: 'gallery',
