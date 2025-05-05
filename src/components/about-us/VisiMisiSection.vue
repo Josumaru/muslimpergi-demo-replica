@@ -33,7 +33,6 @@
                             <tr>
                                 <td class="p-2">
                                     <CircleCheck class="w-7 h-7 text-[#34AF5B]" />
-
                                 </td>
                                 <td class="p-2">
                                     Menjalin kerjasama dengan mitra terpercaya untuk menjamin kualitas layanan
@@ -45,9 +44,7 @@
                                 </td>
                                 <td class="p-2">Menghadirkan pengalaman perjalanan ibadah yang nyaman dan berkesan</td>
                             </tr>
-
                         </tbody>
-
                     </table>
                 </div>
             </div>

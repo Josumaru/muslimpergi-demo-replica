@@ -2,7 +2,7 @@
     <div class="text-black flex items-center justify-center flex-col">
         <div class="container flex items-center justify-end flex-col gap-4 py-20">
             <p class="text-4xl font-title">Tim Kami</p>
-            <p>Kenali tim profesional yang akan membantu perjalanan ibadah Anda</p>
+            <p class="text-center">Kenali tim profesional yang akan membantu perjalanan ibadah Anda</p>
             <div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                     <div v-for="(team, index) in teams" :key="index" class="flex flex-col items-center justify-center">

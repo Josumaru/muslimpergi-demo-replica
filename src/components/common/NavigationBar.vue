@@ -37,13 +37,15 @@
                         <RouterLink to="/about-us" class="text-gray-700 hover:text-white">Tentang Kami
                         </RouterLink>
                     </li>
-
-                    <li class="relative group" @mouseover="toggleDropdown('paket')" @mouseleave="activeDropdown = null">
+                    <li>
+                        <RouterLink to="/paket" class="text-gray-700 hover:text-white">Paket
+                        </RouterLink>
+                    </li>
+                    <!-- <li class="relative group" @mouseover="toggleDropdown('paket')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('paket')"
-                            class="text-gray-700 flex items-center justify-center focus:outline-none">
+                            class="text-gray-700 flex hover:text-white items-center justify-center focus:outline-none">
                             Paket
                             <ChevronRight class="group-hover:rotate-90 transition-all" />
-
                         </button>
                         <ul v-show="activeDropdown === 'paket'"
                             class="absolute top-full mt-2 bg-white shadow rounded w-40 z-50 text-sm text-gray-700 font-normal">
@@ -55,10 +57,10 @@
                                 <RouterLink to="/asd2" class="block px-4 py-2 hover:bg-gray-100">Pusat</RouterLink>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="relative group" @mouseover="toggleDropdown('promo')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('promo')"
-                            class="text-gray-700 flex items-center justify-center focus:outline-none">
+                            class="text-gray-700 hover:text-white flex items-center justify-center focus:outline-none">
                             Promo
                             <ChevronRight class="group-hover:rotate-90 transition-all" />
                         </button>
@@ -73,12 +75,11 @@
                             </li>
                         </ul>
                     </li>
-
                     <li>
-                        <RouterLink to="/" class="text-gray-700"> Galeri</RouterLink>
+                        <RouterLink to="/" class="text-gray-700 hover:text-white"> Galeri</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/" class="text-gray-700"> Artikel</RouterLink>
+                        <RouterLink to="/" class="text-gray-700 hover:text-white"> Artikel</RouterLink>
                     </li>
                 </ul>
             </div>
@@ -102,22 +103,28 @@
                 <img src="@/assets/logo.svg" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
             </div>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Beranda</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Beranda
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Tentang Kami</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/about-us" class="hover:text-[#34AF5B] text-gray-700">
+                    Tentang Kami</RouterLink>
             </li>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Paket</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Paket
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Promo</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Promo
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Galeri</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Galeri
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/" class="hover:text-[#34AF5B] text-gray-700">Artikel</RouterLink>
+                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Artikel
+                </RouterLink>
             </li>
         </ul>
     </nav>
