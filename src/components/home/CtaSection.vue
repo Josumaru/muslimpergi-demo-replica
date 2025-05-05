@@ -1,6 +1,5 @@
 <template>
-
-    <div class="bg-white relative text-black w-full flex items-center justify-center py-20">
+    <div id="ctaSection" class="bg-white relative text-black w-full flex items-center justify-center py-20">
         <img src="@/assets/images/background/bg_0.png" class="w-full h-full object-cover absolute inset-0 z-0" />
 
         <div class="container px-4 flex items-center justify-center flex-col z-20">
@@ -32,7 +31,7 @@
 
 <script setup lang="ts">
 import { RouterLink } from "vue-router"
-import MoreButton from '../common/MoreButton.vue'; 
+import MoreButton from '../common/MoreButton.vue';
 </script>
 
 <style scoped>
