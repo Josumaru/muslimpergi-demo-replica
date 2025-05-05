@@ -7,9 +7,9 @@
     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent z-5"></div>
 
     <!-- Konten -->
-    <div class="relative z-20 px-4 pt-25 flex flex-col items-center text-white text-center">
-      <h1 class="text-[70px] md:text-[135px] font-bold" id="title">UMROH AMANAH</h1>
-      <p class="text-lg md:text-xl pb-10" id="description">Wujudkan Ibadah Umroh/Haji Anda Bersama Kami</p>
+    <div class="relative z-20 px-4 pt-20 flex flex-col items-center text-white text-center">
+      <h1 class="text-[70px] md:text-[135px] font-bold pt-10" id="title">UMROH AMANAH</h1>
+      <p class="text-lg md:text-xl pb-10 -mt-10" id="description">Wujudkan Ibadah Umroh/Haji Anda Bersama Kami</p>
 
       <!-- Wrapper untuk tab + form agar menyatu -->
       <div class="w-full max-w-[15  00px] bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
@@ -91,9 +91,16 @@ const image = {
 
 
 const scrollToCTA = () => {
-  const target = document.getElementById("scrollArrow");
+  const target = document.getElementById("ctaSection");
+  const navbarOffset = 107;
+
   if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
+    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
   } else {
     console.warn("CTA section not found");
   }

@@ -23,10 +23,20 @@ const router = createRouter({
       component: () => import('../views/PaketView.vue'),
     },
     {
+      path: '/promo',
+      name: 'promo',
+      component: () => import('../views/PromoView.vue'),
+    }
+    {
       path: '/gallery',
       name: 'gallery',
       component: () => import('../views/GalleryView.vue'),
     },
+    {
+      path: '/promo',
+      name: 'promo',
+      component: () => import('../views/PromoView.vue'),
+    }
   ],
 })
 

@@ -61,7 +61,11 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li class="relative group" @mouseover="toggleDropdown('promo')" @mouseleave="activeDropdown = null">
+                    <li>
+                        <RouterLink to="/promo" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Promo
+                        </RouterLink>
+                    </li>
+                    <!-- <li class="relative group" @mouseover="toggleDropdown('promo')" @mouseleave="activeDropdown = null">
                         <button @click="toggleDropdown('promo')"
                             class="text-gray-700 dark:text-white hover:text-[#34AF5B] flex items-center justify-center focus:outline-none">
                             Promo
@@ -77,7 +81,7 @@
                                 <RouterLink to="/asd2" class="block px-4 py-2 hover:bg-gray-100">Pusat</RouterLink>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <RouterLink to="/gallery" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Galeri
                         </RouterLink>

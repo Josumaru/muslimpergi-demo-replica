@@ -19,7 +19,9 @@
 
       <!-- KANAN: GAMBAR (akan di atas di mobile, kanan di desktop) -->
       <div class="w-full md:w-1/2 flex justify-center">
-        <div class="bg-gray-300 w-[250px] h-[300px] md:w-[350px] md:h-[400px] rounded-lg"></div>
+        <div class="bg-gray-300 w-[250px] h-[300px] md:w-[350px] md:h-[400px] rounded-lg">
+          <img :src="image.img" alt="About Us" class="w-full h-full object-cover rounded-lg" />
+        </div>
       </div>
 
     </div>
@@ -27,7 +29,11 @@
 </template>
 
 <script setup lang="ts">
+import img from '@/assets/images/about-us-img.jpg'
 
+const image = {
+  img
+  };
 </script>
 
 <style scoped>
