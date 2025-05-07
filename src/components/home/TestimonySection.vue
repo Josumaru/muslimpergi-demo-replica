@@ -1,17 +1,18 @@
 <template>
-    <div class="bg-white/60">
+    <div class="bg-white/60 dark:bg-zinc-900/70">
         <div class="relative">
-            <img src="@/assets/images/background/bg_circle.svg"
-                class="w-full h-full object-cover absolute inset-0 z-0" />
+            <!-- <img src="@/assets/images/background/bg_circle.svg"
+                class="w-full h-full object-cover absolute inset-0 z-0" /> -->
             <div class="z-50 pt-10">
                 <div class="flex z-20 items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
-                            Testimony
+                            Testimoni
                         </template>
                     </OvalTag>
                     <p class="text-[#4AA055] text-center z-20 text-5xl font-title mt-4">Apa Kata Jamaah Kami</p>
-                    <p class="text-black mt-2 text-center">Pengalaman jamaah yang telah melaksanakan ibadah umroh
+                    <p class="text-black dark:text-zinc-100 mt-2 text-center">Pengalaman jamaah yang telah melaksanakan
+                        ibadah umroh
                         bersama kami</p>
                 </div>
                 <div class="z-20 overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
@@ -122,5 +123,9 @@ const repeatedTestimonials = computed(() => [...testimonials, ...testimonials])
 
 .pause-animation {
     animation-play-state: paused;
+}
+
+.font-title {
+    font-weight: 600;
 }
 </style>

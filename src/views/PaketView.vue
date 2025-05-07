@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-[#f7f8fc]">
+    <main>
         <PaketHeader />
         <PaketSection />
     </main>

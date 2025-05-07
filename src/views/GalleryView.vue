@@ -10,5 +10,4 @@ import GalleryHeader from '@/components/gallery/GalleryHeader.vue';
 import GallerySection from '@/components/gallery/GallerySection.vue';
 
 </script>
-
-<style lang="scss" scoped></style>
+<style scoped></style>

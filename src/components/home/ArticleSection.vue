@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white py-10">
+    <div class="py-10">
         <div class="flex z-20 items-center justify-center gap-4 flex-col">
             <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                 <template #title>
@@ -7,7 +7,8 @@
                 </template>
             </OvalTag>
             <p class="text-[#4AA055] z-20 text-center text-5xl font-title mt-4">Artikel & Informasi</p>
-            <p class="text-black mt-2 text-center">Dapatkan informasi terbaru seputar ibadah umroh dan haji</p>
+            <p class="text-black dark:text-zinc-100 mt-2 text-center">Dapatkan informasi terbaru seputar ibadah umroh
+                dan haji</p>
         </div>
         <div class="w-full flex items-center pt-10 justify-center ">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4 container">

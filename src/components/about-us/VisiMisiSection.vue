@@ -3,7 +3,7 @@
         <div class="container flex flex-col px-4 items-center justify-center w-full text-white">
             <h1 class="text-4xl font-title">Visi & Misi</h1>
             <p class="text-xl pb-4 text-center">Komitmen kami untuk memberikan pelayanan terbaik bagi jamaah</p>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
                 <div class="p-5 text-black col-span-1 bg-white rounded-2xl">
                     <p class="text-xl font-title">Visi</p>
                     <p>Menjadi penyedia layanan perjalanan ibadah umrah dan haji yang terpercaya, profesional, dan

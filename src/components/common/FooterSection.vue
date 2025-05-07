@@ -26,15 +26,18 @@
                 <div class="col-span-1">
                     <p class=" text-xl font-title">Kontak Kami</p>
                     <div class="flex flex-col gap-4">
-                        <div class="hover: transition-colors cursor-pointer flex gap-2 items-center justify-start">
+                        <div
+                            class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline cursor-pointer flex gap-2 items-center justify-start">
                             <Phone />
-                            <p>+6281 1906 601</p>
+                            <p class="">+6281 1906 601</p>
                         </div>
-                        <div class="flex gap-2 items-center justify-start hover: transition-colors cursor-pointer ">
+                        <div
+                            class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline flex gap-2 items-center justify-start cursor-pointer ">
                             <Mail />
                             <p>info@muslimpergi.com</p>
                         </div>
-                        <div class="flex gap-2 items-center justify-start hover: transition-colors cursor-pointer ">
+                        <div
+                            class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline flex gap-2 items-center justify-start cursor-pointer ">
                             <MapPin class="w-9 h-9" />
                             <p>Jl. Bone Utama No.13C, Banyuanyar, Kec. Banjarsari, Kota Surakarta</p>
                         </div>
@@ -59,29 +62,53 @@
                 <div class="col-span-1">
                     <p class=" text-xl font-title">Link Cepat</p>
                     <div class="flex flex-col gap-2">
-                        <RouterLink class="hover: transition-colors" to="/">Tentang Kami</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Paket Umroh</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Paket Haji</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Jadwal Keberangkatan</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Galeri</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Artikel</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">FAQ</RouterLink>
-                        <RouterLink class="hover: transition-colors" to="/">Kontak</RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Tentang Kami
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Paket Umroh
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Paket Haji
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Jadwal
+                            Keberangkatan
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Galeri
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Artikel
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">FAQ
+                        </RouterLink>
+                        <RouterLink class="hover:text-[#e6e6e6] transition-all duration-500 hover:underline" to="/">
+                            Kontak
+                        </RouterLink>
                     </div>
                 </div>
                 <div class="col-span-1 gap-4 flex flex-col">
-                    <p class="text-xl font-title ">Unduh Aplikasi</p>
+                    <p class="text-xl font-title">Unduh Aplikasi</p>
                     <p class="">Dapatakan akses informasi dan layanan melalui UmrohKu</p>
-                    <a target="_blank" href="https://www.apple.com/id/app-store/"
-                        class="flex bg-white/10 border-2 items-center hover:bg-white/20 cursor-pointer border-white p-3 gap-2 rounded-full">
-                        <img src="@/assets/icons/apple.svg" alt="Google Play" class="w-6">
-                        <p class="">App Store</p>
-                    </a>
-                    <a target="_blank" href="https://play.google.com/"
-                        class="flex bg-white/10 border-2 items-center hover:bg-white/20 cursor-pointer border-white p-3 gap-2 rounded-full">
-                        <img src="@/assets/icons/google-play-store.svg" alt="Google Play" class="w-6">
-                        <p class="">Play Store</p>
-                    </a>
+                    <div class="flex items-center justify-center gap-4">
+                        <a target="_blank" href="https://www.apple.com/id/app-store/"
+                            class="flex w-full bg-black border-2 items-center cursor-pointer border-gray-400 p-3 gap-2 rounded-lg">
+                            <img src="@/assets/icons/google-play-store.svg" alt="Google Play" class="w-6">
+                            <div>
+                                <p class="font-semibold text-xs">GET IT ON</p>
+                                <p class="font-semibold text-base">Google Play</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.apple.com/id/app-store/"
+                            class="flex w-full bg-black border-2 items-center cursor-pointer border-gray-400 p-3 gap-2 rounded-lg">
+                            <img src="@/assets/icons/apple.svg" alt="Google Play" class="w-6">
+                            <div>
+                                <p class="font-semibold text-xs">Download on the</p>
+                                <p class="font-semibold text-base">App Store</p>
+                            </div>
+                        </a>
+                    </div>
                     <p class="text-xl font-title ">Newsletter</p>
                     <p class="">Dapatakan info terbaru dan promo special</p>
                     <div class="flex gap-2">

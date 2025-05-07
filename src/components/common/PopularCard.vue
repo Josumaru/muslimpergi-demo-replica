@@ -1,39 +1,39 @@
 <template>
-  <div class="bg-white rounded-xl shadow-md overflow-hidden w-[320px] flex flex-col h-full">
+  <div class="bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden w-[320px] flex flex-col h-full">
     <!-- Banner Image -->
-    <img :src="imageUrl ?? '@/assets/PopularComponents/pic4.svg'" alt="Tour Image"
-      class="w-full h-40 object-cover" />
+    <img :src="imageUrl ?? '@/assets/PopularComponents/pic4.svg'" alt="Tour Image" class="w-full h-40 object-cover" />
 
     <!-- Content -->
     <div class="p-4 flex-1 flex flex-col justify-between min-h-[180px]">
       <div>
         <!-- Title -->
-        <h3 class="text-[16px] font-semibold text-black mb-2 leading-tight pb-2 min-h-[48px] line-clamp-2">
+        <h3
+          class="text-[16px] dark:text-white font-semibold text-black mb-2 leading-tight pb-2 min-h-[48px] line-clamp-2">
           {{ title }}
         </h3>
 
         <!-- Jadwal -->
-        <div class="flex justify-between items-center text-sm text-gray-700 mb-2">
+        <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
-            <CalendarDays class="w-4 h-4 stroke-gray-700" />
+            <CalendarDays class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
             <span>Jadwal</span>
           </div>
           <span class="text-right">{{ date }}</span>
         </div>
 
         <!-- Seats -->
-        <div class="flex justify-between items-center text-sm text-gray-700 mb-2">
+        <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
-            <Users class="w-4 h-4 stroke-gray-700" />
+            <Users class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
             <span>Seats</span>
           </div>
           <span class="text-right">{{ seats }}</span>
         </div>
 
         <!-- Hotel -->
-        <div class="flex justify-between items-center text-sm text-gray-700 mb-2">
+        <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
-            <BedDouble class="w-4 h-4 stroke-gray-700" />
+            <BedDouble class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
             <span>Hotel</span>
           </div>
           <div class="flex gap-1 text-yellow-500">
@@ -42,18 +42,18 @@
         </div>
 
         <!-- Berangkat -->
-        <div class="flex justify-between items-center text-sm text-gray-700 mb-2">
+        <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
-            <PlaneTakeoff class="w-4 h-4 stroke-gray-700" />
+            <PlaneTakeoff class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
             <span>Berangkat Dari</span>
           </div>
           <span class="text-right">{{ departure }}</span>
         </div>
 
         <!-- Maskapai -->
-        <div class="flex justify-between items-center text-sm text-gray-700">
+        <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700">
           <div class="flex items-center gap-2">
-            <Plane class="w-4 h-4 stroke-gray-700" />
+            <Plane class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
             <span>Maskapai</span>
           </div>
           <span class="text-right">{{ airline }}</span>

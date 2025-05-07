@@ -3,7 +3,8 @@
         <div class="container flex flex-col px-4 items-center justify-center w-full text-white">
             <h1 class="text-4xl font-title">Legalitas</h1>
             <p class="text-xl pb-4 text-center">Komitmen kami untuk memberikan pelayanan terbaik bagi jamaah</p>
-            <div class="bg-white flex flex-col gap-3 w-full p-5 text-black rounded-xl">
+            <div
+                class="bg-white dark:bg-zinc-900 dark:text-zinc-100 flex flex-col gap-3 w-full p-5 text-black rounded-xl">
                 <div>
                     <p class="font-title-bold">
                         Izin Kementerian Agama

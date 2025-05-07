@@ -2,10 +2,10 @@
     <div class="w-full flex items-center justify-center relative">
         <img src="@/assets/images/background/bg_circle_green.svg"
             class="w-full h-full object-cover absolute inset-0 z-0" />
-        <div class="container px-4 pb-4 lg:pb-0 flex items-start pt-20 justify-between z-20">
+        <div class="container px-4 pb-4 xl:pb-0 flex items-start pt-20 justify-between z-20">
             <div>
-                <p class="text-white w-5/6 font-bold text-2xl md:text-3xl/14">Bismillah langkah pertamamu! Klik <span
-                        class="text-[#4AA055]">Get
+                <p class="text-white w-5/6 font-medium text-2xl md:text-3xl/14">Bismillah langkah pertamamu! Klik
+                    <span class="text-[#4AA055] whitespace-nowrap">Get
                         Started</span> dan siapkan diri
                     untuk
                     perjalanan penuh

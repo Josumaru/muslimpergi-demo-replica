@@ -10,7 +10,7 @@
                         </div>
                         <h3 class="text-xl font-title ">{{ team.name }}</h3>
                         <p class="text-[#32FF00]">{{ team.position }}</p>
-                        <p class="mt-2 text-center text-gray-700">{{ team.description }}</p>
+                        <p class="mt-2 text-center text-gray-700 dark:text-zinc-100">{{ team.description }}</p>
                     </div>
                 </div>
             </div>

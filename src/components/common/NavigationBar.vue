@@ -23,14 +23,14 @@
                 </div>
             </div>
         </div>
-        <div class="container flex items-center justify-between px-4 py-3">
+        <div class="container flex items-center  justify-between px-4 py-3">
             <div class="hidden lg:block">
                 <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 dark:hidden mx-auto mb-4" />
                 <img src="@/assets/logo-dark.png" alt="Logo" class="w-16 h-16  hidden dark:block mx-auto mb-4">
             </div>
             <Menu @click="toggleSidebar(true)" class="lg:hidden text-[#34AF5B]" />
             <div class="translate-x-24">
-                <ul class="hidden  text-gray-700 lg:flex gap-4 items-center justify-center font-bold text-lg">
+                <ul class="hidden  text-gray-700 lg:flex gap-4 items-center justify-center font-medium text-lg">
                     <li>
                         <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Beranda
                         </RouterLink>
@@ -87,7 +87,7 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/article" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Artikel
+                        <RouterLink to="/artikel" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Artikel
                         </RouterLink>
                     </li>
                 </ul>
@@ -143,7 +143,8 @@
                 </RouterLink>
             </li>
             <li>
-                <RouterLink @click="toggleSidebar(false)" to="/" class="hover:text-[#34AF5B] text-gray-700">Artikel
+                <RouterLink @click="toggleSidebar(false)" to="/artikel" class="hover:text-[#34AF5B] text-gray-700">
+                    Artikel
                 </RouterLink>
             </li>
         </ul>
