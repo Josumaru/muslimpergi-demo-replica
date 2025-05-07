@@ -87,7 +87,7 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Artikel
+                        <RouterLink to="/article" class="text-gray-700 dark:text-white hover:text-[#34AF5B]"> Artikel
                         </RouterLink>
                     </li>
                 </ul>

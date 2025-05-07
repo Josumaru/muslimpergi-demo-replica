@@ -5,7 +5,7 @@
       Diskon {{ discount }}%
     </div>
     <!-- Badge Durasi -->
-    <div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+    <div class="absolute top-2 right-2 bg-[#229440] text-white text-xs px-3 py-1 rounded-full font-semibold">
       {{ duration }}
     </div>
 

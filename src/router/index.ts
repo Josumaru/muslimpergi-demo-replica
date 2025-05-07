@@ -33,10 +33,10 @@ const router = createRouter({
       component: () => import('../views/GalleryView.vue'),
     },
     {
-      path: '/promo',
-      name: 'promo',
-      component: () => import('../views/PromoView.vue'),
-    }
+      path: '/article',
+      name: 'article',
+      component: () => import('../views/ArticleView.vue'),
+    },
   ],
 })
 
