@@ -91,9 +91,9 @@
                 <div class="col-span-1 gap-4 flex flex-col">
                     <p class="text-xl font-title">Unduh Aplikasi</p>
                     <p class="">Dapatakan akses informasi dan layanan melalui UmrohKu</p>
-                    <div class="flex items-center justify-center gap-4">
+                    <div class="flex items-center justify-center gap-2">
                         <a target="_blank" href="https://www.apple.com/id/app-store/"
-                            class="flex w-full bg-black border-2 items-center cursor-pointer border-gray-400 p-3 gap-2 rounded-lg">
+                            class="flex w-full bg-black border-2 items-center cursor-pointer hover:bg-zinc-900 transition-colors border-gray-400 px-2 py-1 gap-2 rounded-lg">
                             <img src="@/assets/icons/google-play-store.svg" alt="Google Play" class="w-6">
                             <div>
                                 <p class="font-semibold text-xs">GET IT ON</p>
@@ -101,7 +101,7 @@
                             </div>
                         </a>
                         <a target="_blank" href="https://www.apple.com/id/app-store/"
-                            class="flex w-full bg-black border-2 items-center cursor-pointer border-gray-400 p-3 gap-2 rounded-lg">
+                            class="flex w-full bg-black border-2 items-center cursor-pointer hover:bg-zinc-900 transition-colors border-gray-400 px-2 py-1 gap-2 rounded-lg">
                             <img src="@/assets/icons/apple.svg" alt="Google Play" class="w-6">
                             <div>
                                 <p class="font-semibold text-xs">Download on the</p>

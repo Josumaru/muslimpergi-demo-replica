@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-[full] pb-6 min-h-screen">
+  <div class="relative w-[full] flex items-center justify-center pb-6 min-h-screen">
     <!-- Background -->
     <img :src="image.bg_header" class="absolute inset-0 w-full h-full object-cover z-0" />
 
@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent z-5"></div>
 
     <!-- Konten -->
-    <div class="relative z-20 px-4 pt-20 flex flex-col items-center text-white text-center">
+    <div class="relative container pb-14 z-20 px-4 pt-20 flex flex-col items-center text-white text-center">
       <h1 class="text-[70px] md:text-[135px] font-bold pt-10" id="title">UMROH AMANAH</h1>
       <p class="text-lg md:text-xl pb-10 -mt-10" id="description">Wujudkan Ibadah Umroh/Haji Anda Bersama Kami</p>
 
@@ -70,11 +70,9 @@
         </div>
       </div>
     </div>
-      <div
-      class="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer z-30 group"
-      @click="scrollToCTA"
-    >
-      <div class="flex flex-col animate-bounce items-center space-y-1 transition-all duration-300 group-hover:space-y-0" id="scrollArrow">
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer z-30 group" @click="scrollToCTA">
+      <div class="flex flex-col animate-bounce items-center space-y-1 transition-all duration-300 group-hover:space-y-0"
+        id="scrollArrow">
         <ChevronDown class="w-6 h-6 text-white transition-transform duration-300 group-hover:translate-y-2" />
       </div>
     </div>
@@ -129,20 +127,24 @@ const scrollToCTA = () => {
 .bg-lime-400 {
   background-color: #A4D65E;
 }
+
 #tabPart {
   cursor: pointer;
   transition: background-color 0.5s ease;
   font-weight: bold;
 }
+
 @keyframes scrollArrowAnim {
   0% {
     transform: translateY(0);
     opacity: 1;
   }
+
   50% {
     transform: translateY(10px);
     opacity: 0.6;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -152,5 +154,4 @@ const scrollToCTA = () => {
 .animate-scroll-arrow {
   animation: scrollArrowAnim 1.5s infinite ease-in-out;
 }
-
 </style>

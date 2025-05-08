@@ -13,7 +13,7 @@
           Paket Umroh dan Haji Paling Populer
         </h2>
 
-        <p class="text-[#34AF5B] text-sm w-full md:text-base  p-1">
+        <p class="dark:text-gray-200 text-sm w-full md:text-base  p-1">
           Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah
         </p>
       </div>

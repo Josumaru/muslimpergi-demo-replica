@@ -2,15 +2,9 @@
   <div class="bg-white rounded-xl shadow overflow-hidden">
     <!-- Gambar sebagai Header -->
     <div class="relative h-40">
-      <img
-        :src="image"
-        alt="Article Image"
-        class="object-cover w-full h-full"
-      />
+      <img :src="image" alt="Article Image" class="object-cover w-full h-full" />
       <!-- Badge Kategori -->
-      <span
-        class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow"
-      >
+      <span class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
         {{ category }}
       </span>
     </div>
@@ -19,7 +13,7 @@
     <div class="p-4">
       <!-- Tanggal & Durasi -->
       <div class="text-xs text-gray-500 mb-1">
-        {{ date }} •  {{ readTime }}
+        {{ date }} • {{ readTime }}
       </div>
 
       <!-- Judul -->
@@ -34,18 +28,17 @@
 
       <!-- Tags -->
       <div class="flex flex-wrap gap-2 mb-4 pb-2">
-        <span
-          v-for="(tag, index) in tags"
-          :key="index"
-          class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
-        >
+        <span v-for="(tag, index) in tags" :key="index"
+          class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">
           #{{ tag }}
         </span>
       </div>
 
       <!-- Tombol -->
-      <button class="w-full border border-gray-300 text-sm font-medium py-2 rounded hover:bg-gray-100 transition">
-        Baca Selengkapnya
+      <button class="w-full border border-gray-300 text-sm font-medium rounded hover:bg-gray-100 transition">
+        <RouterLink class="w-full items-center justify-center py-2 flex" to="/article/1">
+          Baca Selengkapnya
+        </RouterLink>
       </button>
     </div>
   </div>
