@@ -9,9 +9,8 @@
                             {{ $t('galeri.galeri') }}
                         </template>
                     </OvalTag>
-                    <p class="text-[#4AA055] text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>
-                    <p class="text-black dark:text-zinc-100 mt-2">Momen-momen berkesan jamaah UmrohKu selama perjalanan
-                        Ibadah</p>
+                    <p class="text-[#4AA055] text-5xl font-title mt-4">{{ $t('galeri.title') }}</p>
+                    <p class="text-black dark:text-zinc-100 mt-2">{{ $t('galeri.subtitle') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-6">
                     <img v-for="item in images" :key="item" :src="item"
@@ -20,7 +19,7 @@
             </div>
             <div class="w-full flex items-center justify-center pb-10">
                 <MoreButton to="/">
-                    Lihat Semua Galeri
+                  {{ $t('galeri.lihat') }}
                 </MoreButton>
             </div>
         </div>

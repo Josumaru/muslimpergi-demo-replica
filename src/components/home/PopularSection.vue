@@ -1,20 +1,20 @@
 <template>
   <main>
-    <div class=" py-10   overflow-hidden">
+    <div class=" py-10  overflow-hidden">
       <!-- Header Section -->
       <div class="flex flex-col items-center justify-center text-center mt-10 gap-3 pb-5">
         <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
           <template #title>
-            Paket Terbaik
+            {{ $t('popular.title') }}
           </template>
         </OvalTag>
 
         <h2 class="text-[#34AF5B] text-2xl md:text-3xl lg:text-4xl font-bold">
-          Paket Umroh dan Haji Paling Populer
+          {{ $t('popular.subtitle') }}
         </h2>
 
         <p class="dark:text-gray-200 text-sm w-full md:text-base  p-1">
-          Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah
+          {{ $t('popular.deskripsi') }}
         </p>
       </div>
 
@@ -28,14 +28,21 @@
 
           <!-- Duplikat konten agar tidak habis -->
           <template v-for="(card, index) in bestPackages" :key="`duplicate-${index}`">
-            <PopularCard :imageUrl="card.imageUrl" :title="card.title" :date="card.date" :seats="card.seats"
-              :hotelStars="card.hotelStars" :departure="card.departure" :airline="card.airline" :price="card.price" />
+            <PopularCard
+            :imageUrl="card.imageUrl"
+            :title="card.title"
+            :date="card.date"
+            :seats="card.seats"
+            :hotelStars="card.hotelStars"
+            :departure="card.departure"
+            :airline="card.airline"
+            :price="card.price" />
           </template>
         </div>
       </div>
       <div class="w-full z-50 flex items-center justify-center py-10">
         <MoreButton to="/">
-          Lihat Semua Paket
+          {{ $t('popular.button') }}
         </MoreButton>
       </div>
     </div>
@@ -64,7 +71,7 @@ const bestPackages = [
   {
     title: "Ziarah Aqsha & Tour Jordan Plus Dubai",
     date: "20 - 25 April 2025",
-    seats: "19/20 Available",
+    seats: "19/20",
     hotelStars: 3,
     departure: "Jakarta",
     airline: "Emirates",
@@ -74,7 +81,7 @@ const bestPackages = [
   {
     title: "Umroh Reguler Hemat",
     date: "1 - 10 Mei 2025",
-    seats: "15/25 Available",
+    seats: "15/25",
     hotelStars: 4,
     departure: "Jakarta",
     airline: "Saudi Airlines",
@@ -84,7 +91,7 @@ const bestPackages = [
   {
     title: "Umroh Plus Turki",
     date: "15 - 25 Juni 2025",
-    seats: "10/20 Available",
+    seats: "10/20",
     hotelStars: 5,
     departure: "Surabaya",
     airline: "Turkish Airlines",
@@ -94,7 +101,7 @@ const bestPackages = [
   {
     title: "Umroh Plus Turki",
     date: "15 - 25 Juni 2025",
-    seats: "10/20 Available",
+    seats: "10/20",
     hotelStars: 5,
     departure: "Surabaya",
     airline: "Turkish Airlines",

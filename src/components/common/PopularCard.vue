@@ -16,7 +16,7 @@
         <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
             <CalendarDays class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
-            <span>Jadwal</span>
+            <span>{{ $t('popular.jadwal') }}</span>
           </div>
           <span class="text-right">{{ date }}</span>
         </div>
@@ -25,16 +25,16 @@
         <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
             <Users class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
-            <span>Seats</span>
+            <span>{{ $t("popular.kursi") }}</span>
           </div>
-          <span class="text-right">{{ seats }}</span>
+          <span class="text-right">{{ seats }} {{ $t('popular.tersedia') }}</span>
         </div>
 
         <!-- Hotel -->
         <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
             <BedDouble class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
-            <span>Hotel</span>
+            <span>{{ $t('popular.hotel') }}</span>
           </div>
           <div class="flex gap-1 text-yellow-500">
             <Star v-for="n in hotelStars" :key="n" class="w-4 h-4 fill-yellow-500 stroke-yellow-500" />
@@ -45,7 +45,7 @@
         <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700 mb-2">
           <div class="flex items-center gap-2">
             <PlaneTakeoff class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
-            <span>Berangkat Dari</span>
+            <span>{{ $t('popular.departure') }}</span>
           </div>
           <span class="text-right">{{ departure }}</span>
         </div>
@@ -54,7 +54,7 @@
         <div class="flex justify-between items-center dark:text-zinc-100 text-sm text-gray-700">
           <div class="flex items-center gap-2">
             <Plane class="w-4 h-4 stroke-gray-700 dark:stroke-zinc-100" />
-            <span>Maskapai</span>
+            <span>{{ $t('popular.maskapai') }}</span>
           </div>
           <span class="text-right">{{ airline }}</span>
         </div>

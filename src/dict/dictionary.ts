@@ -1,3 +1,4 @@
+import { Subtitles } from 'lucide-vue-next'
 import { createI18n } from 'vue-i18n'
 
 export const i18nConfig = createI18n({
@@ -76,97 +77,41 @@ export const i18nConfig = createI18n({
       },
       keunggulan: {
         judul: 'Keunggulan',
-        deskripsi1: 'Mengapa Memilih Umroh Amanah?',
-        deskripsi2: 'Kami menyediakan layanan terbaik untuk ibadah umroh dan haji Anda.',
-        terpercaya: 'Terpercaya',
-        terpercayaDeskripsi:
-          'Izin resmi Kementerian Agama dengan pengalaman lebih dari 10 tahun melayani jamaah.',
-        ahli: 'Pembimbing Ahli',
-        ahliDeskripsi:
-          'Ibadah Anda akan dibimbing oleh ustadz berpengalaman yang sabar, ramah, dan memahami kebutuhan jamaah.',
-        strategis: 'Lokasi Hotel Strategis',
-        strategisDeskripsi:
-          'Hotel pilihan kami berlokasi dekat Masjidil Haram dan Masjid Nabawi, memudahkan Anda dalam beribadah tanpa hambatan.',
-        fleksibel: 'Pembayaran Fleksibel',
-        fleksibelDeskripsi:
-          'Kami menyediakan berbagai metode pembayaran, termasuk cicilan ringan hingga 12 bulan, untuk kenyamanan finansial Anda.',
-        layanan: 'Layanan Prima',
-        layananDeskripsi:
-          'Mulai dari pendaftaran hingga kepulangan, tim profesional kami siap melayani dan mendampingi Anda dengan sepenuh hati.',
+        deskripsi1: "Mengapa Memilih Umroh Amanah?",
+        deskripsi2: "Kami menyediakan layanan terbaik untuk ibadah umroh dan haji Anda.",
+        terpercaya: "Terpercaya",
+        terpercayaDeskripsi: "Izin resmi Kementerian Agama dengan pengalaman lebih dari 10 tahun melayani jamaah.",
+        ahli : "Pembimbing Ahli",
+        ahliDeskripsi: "Ibadah Anda akan dibimbing oleh ustadz berpengalaman yang sabar, ramah, dan memahami kebutuhan jamaah.",
+        strategis: "Lokasi Hotel Strategis",
+        strategisDeskripsi:"Hotel pilihan kami berlokasi dekat Masjidil Haram dan Masjid Nabawi, memudahkan Anda dalam beribadah tanpa hambatan.",
+        fleksibel: "Pembayaran Fleksibel",
+        fleksibelDeskripsi: "Kami menyediakan berbagai metode pembayaran, termasuk cicilan ringan hingga 12 bulan, untuk kenyamanan finansial Anda.",
+        layanan: "Layanan Prima",
+        layananDeskripsi: "Mulai dari pendaftaran hingga kepulangan, tim profesional kami siap melayani dan mendampingi Anda dengan sepenuh hati."
+        },
+      popular: {
+        title: "Paket Terbaik",
+        subtitle: "Paket Umroh dan Haji Paket Umroh dan Haji Paling Populer",
+        deskripsi: "Momen-momen berkesan jamaah UmrohKu selama perjalanan ibadah",
+        button: "Lihat Semua Paket",
+        jadwal: "Jadwal",
+        kursi: "Kursi",
+        hotel: "Hotel",
+        departure: "keberangkatan",
+        maskapai: "Maskapai",
+        tersedia: "tersedia",
       },
-      promo: {
-        bismillah: 'Bismillah langkah pertamamu! Klik',
-        getStarted: ' Mulai Sekarang ',
-        danSiapkan: 'dan siapkan diri untuk perjalanan penuh berkah bersama',
-        getApp: 'Unduh Aplikasi',
+      gallery: {
+        Subtitle: "Galeri Perjalanan dan Destinasi Tujuan",
+        description: "Momen-momen berkesan jamaah UmrohKu selama perjalanan Ibadah",
+        button : "Lihat Semua Galeri",
       },
-      testimoni: {
-        testimoni: 'Testimoni',
-        apaKata: 'Apa Kata Jamaah Kami',
-        pengalamanJamaah: 'Pengalaman jamaah yang telah melaksanakan ibadah umroh bersama kami',
-        lihatSemua: 'Lihat Semua Testimoni',
-        testimonials: [
-          {
-            rating: 5,
-            text: 'Pelayanan sangat ramah, dari keberangkatan hingga kembali ke tanah air. Lokasi hotel sangat strategis dan dekat dengan Masjidil Haram.',
-            name: 'Nur Aisyah',
-            location: 'Depok, Umroh Plus Thaif',
-          },
-          {
-            rating: 4,
-            text: 'Saya sangat puas dengan perjalanan umroh kali ini. Tour guide sangat informatif dan membantu jamaah yang baru pertama kali berangkat.',
-            name: 'Bambang Triyono',
-            location: 'Semarang, Umroh Reguler',
-          },
-          {
-            rating: 5,
-            text: 'Pengalaman yang luar biasa! Semua fasilitas sesuai dengan yang dijanjikan. Terima kasih UmrohKu, insyaAllah akan berangkat lagi bersama keluarga.',
-            name: 'Lilis Marlina',
-            location: 'Bekasi, Umroh Keluarga',
-          },
-          {
-            rating: 5,
-            text: 'Layanan sangat memuaskan. Hotel bersih dan makanan selalu tersedia dengan rasa yang lezat. Saya sangat merekomendasikan UmrohKu!',
-            name: 'Rizky Hidayat',
-            location: 'Yogyakarta, Umroh Akhir Tahun',
-          },
-          {
-            rating: 4,
-            text: 'Umroh bersama UmrohKu sangat terorganisir dengan baik. Tim selalu sigap membantu jamaah, terutama lansia.',
-            name: 'Yusuf Maulana',
-            location: 'Medan, Umroh Lansia',
-          },
-          {
-            rating: 5,
-            text: 'Paket haji yang ditawarkan sangat lengkap dan memudahkan proses ibadah. Petugasnya ramah dan berpengalaman.',
-            name: 'Fatimah Zahra',
-            location: 'Padang, Haji Plus',
-          },
-          {
-            rating: 5,
-            text: 'Sungguh perjalanan spiritual yang luar biasa. Semua berjalan lancar berkat koordinasi tim yang sangat profesional.',
-            name: 'Dian Prasetyo',
-            location: 'Bogor, Umroh Syawal',
-          },
-          {
-            rating: 4,
-            text: 'Hotel nyaman, transportasi lancar, dan jadwal ibadah sangat teratur. Terima kasih UmrohKu atas bimbingannya.',
-            name: 'Rina Anggraeni',
-            location: 'Tangerang, Umroh Ramadhan',
-          },
-          {
-            rating: 5,
-            text: 'Bimbingan selama manasik sangat membantu, sehingga saat di tanah suci ibadah lebih tenang dan khusyuk.',
-            name: 'Fajar Nugroho',
-            location: 'Solo, Haji Reguler',
-          },
-          {
-            rating: 5,
-            text: 'Saya dan istri merasa sangat terbantu dan nyaman. Semoga bisa kembali lagi bersama UmrohKu.',
-            name: 'Hendra Wijaya',
-            location: 'Malang, Umroh Couple',
-          },
-        ],
+      artikel: {
+        title: "Artikel",
+        subtitle: "Artikel & Informasi",
+        description: "Dapatkan informasi terbaru seputar ibadah umroh dan haji",
+        button: "Lihat Semua Artikel",
       },
     },
     en: {
@@ -240,99 +185,39 @@ export const i18nConfig = createI18n({
         daftar: 'Submit',
       },
       keunggulan: {
-        judul: 'Our Advantages',
-        deskripsi1: 'Why Choose Umroh Amanah?',
-        deskripsi2: 'We provide the best services for your Umrah and Hajj journey.',
-        terpercaya: 'Trusted',
-        terpercayaDeskripsi:
-          'Officially licensed by the Ministry of Religious Affairs with over 10 years of experience serving pilgrims.',
-        ahli: 'Expert Guides',
-        ahliDeskripsi:
-          'Your worship will be guided by experienced and patient ustadz who are friendly and understand the needs of the pilgrims.',
-        strategis: 'Strategic Hotel Locations',
-        strategisDeskripsi:
-          'Our selected hotels are conveniently located near Masjid al-Haram and Al-Masjid an-Nabawi, ensuring smooth and easy access to worship.',
-        fleksibel: 'Flexible Payment Options',
-        fleksibelDeskripsi:
-          'We offer various payment methods, including easy installments up to 12 months, for your financial convenience.',
-        layanan: 'Excellent Service',
-        layananDeskripsi:
-          'From registration to return, our professional team is ready to serve and assist you wholeheartedly.',
-      },
-      promo: {
-        bismillah: 'Bismillah, your first step begins! Click',
-        getStarted: ' Get Started ',
-        danSiapkan: 'and get ready for a blessed journey with',
-        getApp: 'Get the App',
-      },
-      testimoni: {
-        testimoni: 'Testimonials',
-        apaKata: 'What Our Pilgrims Say',
-        pengalamanJamaah: 'Experiences of pilgrims who have performed Umrah with us',
-        lihatSemua: 'View All Testimonials',
-        testimonials: [
-          {
-            rating: 5,
-            text: 'The service was very friendly, from departure until return. The hotel location was strategic and close to Masjid al-Haram.',
-            name: 'Nur Aisyah',
-            location: 'Depok, Umrah Plus Thaif',
-          },
-          {
-            rating: 4,
-            text: 'I was very satisfied with this Umrah trip. The tour guide was informative and helpful, especially for first-time pilgrims.',
-            name: 'Bambang Triyono',
-            location: 'Semarang, Regular Umrah',
-          },
-          {
-            rating: 5,
-            text: 'An amazing experience! All facilities matched the promises. Thank you UmrohKu, inshaAllah I’ll go again with my family.',
-            name: 'Lilis Marlina',
-            location: 'Bekasi, Family Umrah',
-          },
-          {
-            rating: 5,
-            text: 'Excellent service. Clean hotel and delicious food always available. I highly recommend UmrohKu!',
-            name: 'Rizky Hidayat',
-            location: 'Yogyakarta, Year-End Umrah',
-          },
-          {
-            rating: 4,
-            text: 'Umrah with UmrohKu was very well organized. The team was always responsive, especially in assisting elderly pilgrims.',
-            name: 'Yusuf Maulana',
-            location: 'Medan, Elderly Umrah',
-          },
-          {
-            rating: 5,
-            text: 'The Hajj package was very complete and made worship easier. The staff were friendly and experienced.',
-            name: 'Fatimah Zahra',
-            location: 'Padang, Hajj Plus',
-          },
-          {
-            rating: 5,
-            text: 'A truly amazing spiritual journey. Everything went smoothly thanks to the team’s professional coordination.',
-            name: 'Dian Prasetyo',
-            location: 'Bogor, Shawwal Umrah',
-          },
-          {
-            rating: 4,
-            text: 'Comfortable hotel, smooth transportation, and a well-structured prayer schedule. Thank you UmrohKu for the guidance.',
-            name: 'Rina Anggraeni',
-            location: 'Tangerang, Ramadan Umrah',
-          },
-          {
-            rating: 5,
-            text: 'The guidance during manasik was very helpful, making worship in the holy land more peaceful and focused.',
-            name: 'Fajar Nugroho',
-            location: 'Solo, Regular Hajj',
-          },
-          {
-            rating: 5,
-            text: 'My wife and I felt very supported and comfortable. We hope to return again with UmrohKu.',
-            name: 'Hendra Wijaya',
-            location: 'Malang, Couple Umrah',
-          },
-        ],
-      },
+        judul: "Our Advantages",
+        deskripsi1: "Why Choose Umroh Amanah?",
+        deskripsi2: "We provide the best services for your Umrah and Hajj journey.",
+        terpercaya: "Trusted",
+        terpercayaDeskripsi: "Officially licensed by the Ministry of Religious Affairs with over 10 years of experience serving pilgrims.",
+        ahli: "Expert Guides",
+        ahliDeskripsi: "Your worship will be guided by experienced and patient ustadz who are friendly and understand the needs of the pilgrims.",
+        strategis: "Strategic Hotel Locations",
+        strategisDeskripsi: "Our selected hotels are conveniently located near Masjid al-Haram and Al-Masjid an-Nabawi, ensuring smooth and easy access to worship.",
+        fleksibel: "Flexible Payment Options",
+        fleksibelDeskripsi: "We offer various payment methods, including easy installments up to 12 months, for your financial convenience.",
+        layanan: "Excellent Service",
+        layananDeskripsi: "From registration to return, our professional team is ready to serve and assist you wholeheartedly.",
+
+    },
+    popular: {
+      title: "Best Packages",
+      subtitle: "Our Most Popular Umrah and Hajj Packages",
+      deskripsi: "Memorable moments from UmrohKu pilgrims during their spiritual journey",
+      button: "View All Packages",
+      jadwal: "Schedule",
+      kursi: "Seats",
+      hotel: "Hotel",
+      departure: "Departure",
+      maskapai: "Airline",
+      tersedia: "available",
+    },
+    artikel: {
+      title: "Articles",
+      subtitle: "Articles & Information",
+      description: "Get the latest information about Umrah and Hajj pilgrimages",
+      button: "View All Articles",
+    }
     },
   },
 })
