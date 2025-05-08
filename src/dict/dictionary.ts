@@ -186,6 +186,12 @@ export const i18nConfig = createI18n({
           },
         ],
       },
+      promo: {
+        bismillah: 'Bismillah langkah pertamamu! Klik',
+        getStarted: ' Mulai Sekarang ',
+        danSiapkan: 'dan siapkan diri untuk perjalanan penuh berkah bersama',
+        getApp: 'Unduh Aplikasi',
+      },
     },
     en: {
       navbar: {
@@ -362,6 +368,12 @@ export const i18nConfig = createI18n({
             location: 'Malang, Couple Umrah',
           },
         ],
+      },
+      promo: {
+        bismillah: 'Bismillah, your first step begins! Click',
+        getStarted: ' Get Started ',
+        danSiapkan: 'and get ready for a blessed journey with',
+        getApp: 'Get the App',
       },
     },
   },
