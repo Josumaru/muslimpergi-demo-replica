@@ -7,23 +7,26 @@
                 <div class="flex z-20 items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
-                            Testimoni
+                            {{ $t('testimoni.testimoni') }}
                         </template>
                     </OvalTag>
-                    <p class="text-[#4AA055] text-center z-20 text-5xl font-title mt-4">Apa Kata Jamaah Kami</p>
-                    <p class="text-black dark:text-zinc-100 mt-2 text-center">Pengalaman jamaah yang telah melaksanakan
-                        ibadah umroh
-                        bersama kami</p>
+                    <p class="text-[#4AA055] text-center z-20 text-5xl font-title mt-4">
+                        {{ $t('testimoni.apaKata') }}
+
+                    </p>
+                    <p class="text-black dark:text-zinc-100 mt-2 text-center">
+                        {{ $t('testimoni.pengalamanJamaah') }}
+                    </p>
                 </div>
                 <div class="z-20 overflow-hidden pt-5 group" @mouseover="pause = true" @mouseleave="pause = false">
                     <div class="flex flex-none gap-6 animate-marquee" :class="{ 'pause-animation': pause }">
-                        <TestimonialCard v-for="(item, i) in repeatedTestimonials" :key="i" v-bind="item" />
+                        <TestimonialCard v-for="(item, i) in $tm('testimoni.testimonials')" :key="i" v-bind="item" />
                     </div>
                 </div>
             </div>
             <div class="w-full z-50 flex items-center justify-center py-10">
                 <MoreButton to="/">
-                    Lihat Semua Testimoni
+                    {{ $t('testimoni.lihatSemua') }}
                 </MoreButton>
             </div>
         </div>
@@ -37,7 +40,6 @@ import OvalTag from "@/components/common/OvalTag.vue"
 import MoreButton from "@/components/common/MoreButton.vue"
 
 const pause = ref(false)
-
 // Data testimonial
 const testimonials = [
     {

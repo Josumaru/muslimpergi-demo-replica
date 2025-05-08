@@ -5,14 +5,14 @@
             class="transition-all duration-500 bg-[#34AF5B] w-full py-3 flex items-center justify-center">
             <div class="container px-4 text-white flex items-center justify-center xl:justify-between">
                 <div class="xl:flex hidden text-xs 2xl:text-base items-center justify-center gap-2">
-                    <RouterLink to="/" class="font-navbar">Paket Umrah</RouterLink>
+                    <RouterLink to="/paket" class="font-navbar">{{ $t('navbar.paketUmroh') }}</RouterLink>
                     <p>|</p>
-                    <RouterLink to="/" class="font-navbar">Program Haji</RouterLink>
+                    <RouterLink to="/promo" class="font-navbar">{{ $t('navbar.programHaji') }}</RouterLink>
                     <p>|</p>
-                    <RouterLink to="/" class="font-navbar">Layanan Pelanggan</RouterLink>
+                    <RouterLink to="/" class="font-navbar">{{ $t('navbar.layananPelanggan') }}</RouterLink>
                 </div>
                 <p class="text-white text-xs text-center 2xl:text-base font-bold font-navbar">
-                    Pengalaman Umrah yang Aman dan Terpercaya. Amankan Kursi Anda Sekarang!
+                    {{ $t('navbar.pengalamanUmroh') }}
                 </p>
                 <div class="hidden xl:flex items-center justify-center gap-2">
                     <PhoneIcon class="cursor-pointer" />
@@ -37,26 +37,30 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/about-us" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Tentang
-                            Kami
+                        <RouterLink to="/about-us" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">
+                            {{ $t('navbar.tentangKami') }}
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/paket" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Paket
-                        </RouterLink>
-                    </li>
-
-                    <li>
-                        <RouterLink to="/promo" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Promo
+                        <RouterLink to="/paket" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">
+                            {{ $t('navbar.paket') }}
                         </RouterLink>
                     </li>
 
                     <li>
-                        <RouterLink to="/gallery" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Galeri
+                        <RouterLink to="/promo" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">
+                            {{ $t('navbar.promo') }}
+                        </RouterLink>
+                    </li>
+
+                    <li>
+                        <RouterLink to="/gallery" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">
+                            {{ $t('navbar.galeri') }}
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/article" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">Artikel
+                        <RouterLink to="/article" class="text-gray-700 dark:text-white hover:text-[#34AF5B]">
+                            {{ $t('navbar.artikel') }}
                         </RouterLink>
                     </li>
                 </ul>
@@ -87,11 +91,11 @@
                 </div>
                 <RouterLink to="/login"
                     class="border-2 font-button hover:bg-[#34AF5B] hover:text-white transition-colors border-[#34AF5B] flex items-center text-[#34AF5B] font-bold px-4 py-2 rounded-4xl">
-                    Unduh Aplikasi
+                    {{ $t('navbar.unduh') }}
                 </RouterLink>
                 <RouterLink to="/login"
                     class="font-button hover:bg-transparent border-[#34AF5B] hover:text-[#34AF5B] transition-colors border-2 hover:border-[#34AF5B] bg-[#34AF5B] font-bold text-white px-6 py-2 rounded-4xl">
-                    Login
+                    {{ $t('navbar.login') }}
                 </RouterLink>
             </div>
         </div>
