@@ -25,8 +25,8 @@
         </div>
         <div class="container flex items-center  justify-between px-4 py-3">
             <div class="hidden xl:block">
-                <img src="@/assets/logo.png" alt="Logo" class="w-16 h-16 dark:hidden mx-auto mb-4" />
-                <img src="@/assets/logo-dark.png" alt="Logo" class="w-16 h-16  hidden dark:block mx-auto mb-4">
+                <img src="@/assets/logo.png" alt="Logo" class="w-8 h-8 dark:hidden mx-auto mb-4" />
+                <img src="@/assets/logo-dark.png" alt="Logo" class="w-8 h-8  hidden dark:block mx-auto mb-4">
             </div>
             <Menu @click="toggleSidebar(true)" class="xl:hidden text-[#34AF5B]" />
             <div class="translate-x-24">
