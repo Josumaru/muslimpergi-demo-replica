@@ -6,7 +6,7 @@
                 <div class="flex items-center justify-center gap-4 flex-col">
                     <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">
                         <template #title>
-                            Galeri
+                            {{ $t('galeri.galeri') }}
                         </template>
                     </OvalTag>
                     <p class="text-[#4AA055] text-5xl font-title mt-4">Galeri Perjalanan dan Destinasi Tujuan</p>

@@ -9,17 +9,18 @@
     <!-- Konten -->
     <div class="relative container pb-14 z-20 px-4 pt-20 flex flex-col items-center text-white text-center">
       <h1 class="text-[70px] md:text-[135px] font-bold pt-10" id="title">UMROH AMANAH</h1>
-      <p class="text-lg md:text-xl pb-10 -mt-10" id="description">Wujudkan Ibadah Umroh/Haji Anda Bersama Kami</p>
+      <p class="text-lg md:text-xl pb-10 -mt-10" id="description"> {{ $t('beranda.headerSubtitle') }}
+      </p>
 
       <!-- Wrapper untuk tab + form agar menyatu -->
       <div class="w-full max-w-[15  00px] bg-white/50 mt-10 rounded-t-3xl rounded-b-2xl overflow-hidden">
         <!-- Tab Bar -->
         <div class="flex w-full rounded-b-2xl rounded-t-2xl top-4 overflow-hidden">
           <div class="w-1/2 bg-[#229440]  text-black py-3 text-center hover:bg-[#4DD32C]" id="tabPart">
-            Paket Umroh
+            {{ $t('beranda.paketUmroh') }}
           </div>
           <div class="w-1/2 bg-[#4DD32C] text-black py-3 text-center hover:bg-[#229440] focus:outline-2" id="tabPart">
-            Paket Haji
+            {{ $t('beranda.paketHaji') }}
           </div>
         </div>
 
@@ -32,7 +33,10 @@
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <!-- Field 1 -->
             <div class="text-left rounded-md py-2">
-              <label class="block text-black text-sm font-semibold mb-1 pb-2">Keberangkatan</label>
+              <label class="block text-black text-sm font-semibold mb-1 pb-2">
+                {{ $t('beranda.keberangkatan') }}
+
+              </label>
               <select class="w-full py-2 px-2 rounded-full text-black bg-white">
                 <option>Jakarta</option>
               </select>
@@ -40,7 +44,10 @@
 
             <!-- Field 2 -->
             <div class="text-left rounded-md py-2">
-              <label class="block text-black text-sm font-semibold mb-1 pb-2">Jenis Paket</label>
+              <label class="block text-black text-sm font-semibold mb-1 pb-2">
+                {{ $t('beranda.paketUmroh') }}
+
+              </label>
               <select class="w-full py-2 px-2 rounded-full text-black bg-white">
                 <option>Umroh Reguler</option>
               </select>
@@ -48,7 +55,10 @@
 
             <!-- Field 3 -->
             <div class="text-left rounded-md py-2">
-              <label class="block text-black text-sm font-semibold mb-1 pb-2">Maskapai</label>
+              <label class="block text-black text-sm font-semibold mb-1 pb-2">
+                {{ $t('beranda.maskapai') }}
+
+              </label>
               <select class="w-full py-2 px-2 rounded-full text-black bg-white">
                 <option>Garuda Indonesia</option>
               </select>
@@ -56,7 +66,8 @@
 
             <!-- Field 4 -->
             <div class="text-left rounded-md py-2">
-              <label class="block text-black text-sm font-semibold mb-1 pb-2">Bandara Keberangkatan</label>
+              <label class="block text-black text-sm font-semibold mb-1 pb-2"> {{ $t('beranda.bandara') }}
+              </label>
               <select class="w-full py-2 px-2 rounded-full text-black bg-white">
                 <option>Soekarno Hatta</option>
               </select>
