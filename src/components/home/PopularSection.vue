@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class=" py-10 px-4 overflow-hidden">
+    <div class=" py-10   overflow-hidden">
       <!-- Header Section -->
       <div class="flex flex-col items-center justify-center text-center mt-10 gap-3 pb-5">
         <OvalTag bg-color="#34AF5B" text-color="#FFFFFF">

@@ -9,7 +9,7 @@
 
     <div class="pl-4 pt-2">
       <!-- Title -->
-      <h3 class="text-xl text-black mb-10 text-left pt-2 pb-2" id="title">
+      <h3 class="text-xl text-black mb-3 text-left" id="title">
         <slot name="title" />
       </h3>
 
