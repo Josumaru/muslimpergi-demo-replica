@@ -1,5 +1,5 @@
 <template>
-    <div v-html="markdown.render(src)"></div>
+    <div :class="isDark ? 'darkTheme' : ''" v-html="markdown.render(src)"></div>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +13,10 @@ import MarkdownItSub from "markdown-it-sub";
 import MarkdownItSup from "markdown-it-sup";
 import MarkdownItTasklists from "markdown-it-task-lists";
 import MarkdownItTOC from "markdown-it-toc-done-right";
+import { useDark, useToggle } from '@vueuse/core'
+
+const isDark = useDark()
+
 defineOptions({
     customElement: true,
 });
@@ -22,9 +26,8 @@ const src = `
 
 **Umrah** adalah ibadah yang dilakukan dengan mengunjungi Baitullah (Ka'bah) untuk melaksanakan serangkaian ibadah dengan syarat-syarat tertentu. Berbeda dengan haji, umrah dapat dilakukan kapan saja sepanjang tahun.
 
----
 
-## 📄 Persiapan Dokumen
+## Persiapan Dokumen
 
 Sebelum berangkat umrah, pastikan Anda telah mempersiapkan dokumen-dokumen berikut:
 
@@ -35,9 +38,8 @@ Sebelum berangkat umrah, pastikan Anda telah mempersiapkan dokumen-dokumen berik
 - Pas foto dengan latar belakang putih
 - KTP dan Kartu Keluarga
 
----
 
-## 💪 Persiapan Fisik
+## Persiapan Fisik
 
 Ibadah umrah membutuhkan kondisi fisik yang prima. Berikut beberapa tips untuk mempersiapkan fisik Anda:
 
@@ -46,9 +48,8 @@ Ibadah umrah membutuhkan kondisi fisik yang prima. Berikut beberapa tips untuk m
 - Periksakan kesehatan ke dokter
 - Jika memiliki penyakit tertentu, konsultasikan dengan dokter dan siapkan obat-obatan yang diperlukan
 
----
 
-## 🧠 Persiapan Mental dan Spiritual
+## Persiapan Mental dan Spiritual
 
 Persiapan mental dan spiritual tidak kalah pentingnya. Berikut beberapa hal yang perlu dipersiapkan:
 
@@ -58,9 +59,8 @@ Persiapan mental dan spiritual tidak kalah pentingnya. Berikut beberapa hal yang
 - Luruskan niat untuk beribadah kepada Allah SWT
 - Selesaikan urusan duniawi yang mungkin mengganggu kekhusyukan ibadah
 
----
 
-## 🎒 Perlengkapan yang Perlu Dibawa
+## Perlengkapan yang Perlu Dibawa
 
 Berikut adalah perlengkapan yang sebaiknya Anda bawa saat umrah:
 
@@ -73,9 +73,8 @@ Berikut adalah perlengkapan yang sebaiknya Anda bawa saat umrah:
 - Buku doa dan Al-Quran ukuran kecil
 - Masker, hand sanitizer, dan vitamin
 
----
 
-## 🕋 Tips Selama di Tanah Suci
+## Tips Selama di Tanah Suci
 
 Beberapa tips yang bermanfaat selama Anda berada di Tanah Suci:
 
@@ -86,7 +85,6 @@ Beberapa tips yang bermanfaat selama Anda berada di Tanah Suci:
 - Jaga kesehatan dengan istirahat yang cukup
 - Hormati budaya dan peraturan setempat
 
----
 
 Dengan persiapan yang matang, insya Allah ibadah umrah Anda akan berjalan lancar dan khusyuk.  
 **Semoga panduan ini bermanfaat bagi Anda yang akan menunaikan ibadah umrah untuk pertama kalinya.**
@@ -104,4 +102,12 @@ const markdown = new MarkdownIt()
 
 </script>
 
-<style></style>
+<style>
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+
+    .darkTheme {
+        color: rgb(214, 214, 214);
+    }
+}
+</style>

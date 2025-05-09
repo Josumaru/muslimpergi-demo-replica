@@ -40,35 +40,34 @@
                 <markdown-element class="col-span-8" />
                 <div class="col-span-2 hidden lg:flex flex-col gap-2 w-full">
                     <div class="col-span-2 flex flex-col gap-2 p-4 border w-full border-gray-200 rounded-xl">
-                        <h1 class="text-lg font-medium">Progres Membaca</h1>
+                        <h1 class="text-lg font-medium dark:text-zinc-100">Progres Membaca</h1>
                         <div class="w-full h-2 rounded-xl overflow-hidden bg-[#34AF5B40]">
                             <div class="bg-[#34AF5B] h-full" :class="`w-[${progress}%] `"></div>
                         </div>
                         <div class="flex gap-2">
                             <p class="text-[#34AF5B]">{{ progress }}%</p>
-                            <p>telah dibaca:</p>
+                            <p class="dark:text-zinc-100">telah dibaca:</p>
                         </div>
                         <div>
-                            <p>Bagian yang telah dibaca:</p>
+                            <p class="dark:text-zinc-100">Bagian yang telah dibaca:</p>
                             <ul class="mt-2">
                                 <li v-for="(section, index) in sections" :key="index"
                                     class="flex h-full items-start gap-2">
                                     <div class="relative h-14 flex justify-center">
-                                        <div :class="section.completed ? 'bg-[#34AF5B]' : 'bg-white'"
-                                            class="h-16 w-[3px] absolute ">
-
+                                        <div :class="section.completed ? 'bg-[#34AF5B]' : 'bg-transparent'"
+                                            class="h-16 w-[3px] absolute">
                                         </div>
                                         <div class="w-6 h-6 z-20 aspect-square rounded-full flex items-center justify-center"
-                                            :class="section.completed ? 'bg-[#34AF5B] text-white' : 'border-2 border-gray-300'">
+                                            :class="section.completed ? 'bg-[#34AF5B] text-white' : 'border-2 dark:bg-black bg-white border-gray-300'">
                                             <span v-if="section.completed">
                                                 <Check class="w-3 h-3" />
                                             </span>
                                         </div>
-
                                     </div>
                                     <div>
-                                        <p class="font-medium text-blue-600">{{ section.title }}</p>
-                                        <p class="text-sm text-gray-600">{{ section.description }}</p>
+                                        <p class="font-medium text-[#34AF5B]">{{ section.title }}</p>
+                                        <p class="text-sm text-gray-600 dark:text-zinc-300">{{ section.description
+                                            }}</p>
                                     </div>
                                 </li>
                             </ul>

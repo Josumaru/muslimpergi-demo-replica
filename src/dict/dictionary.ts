@@ -1,4 +1,3 @@
-import { Subtitles } from 'lucide-vue-next'
 import { createI18n } from 'vue-i18n'
 
 export const i18nConfig = createI18n({
